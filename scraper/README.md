@@ -3,6 +3,9 @@ This is a "webscrapper" for the Art of Problem Solving website. **It is meant to
 CONTEST COLLECTIONS! IT WON'T WORK FOR OTHER USES!** It is written in python. An example of such
 a contest collection can be found [here](https://artofproblemsolving.com/community/c1116106_2020_amc_10).
 
+**NOTE: This scrapper only works for 2020 AMC 10 currently. Will hopefully add implementation that makes
+it work for all possible tests!**
+
 Note this doesn't really download the website, but does use Beautiful Soup to get the desired HTML
 code. So I guess it sort of is a webscrapper. :/
 
