@@ -1,27 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
 body {
 	color: white;
-	font-family: 'Roboto', sans-serif;
-	background-color: purple;
-}
-p {
-	font-size: 22px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #52077a;
+	-webkit-font-smoothing: antialiased;
 }
 h1 {
-	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 50px;
 }
 h2 {
-	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 40px;
 }
-li {
-	font-size: 22px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
+h3 {
+	font-weight: 400;
+	font-size: 30px;
+}
+b {
+	font-weight: 600;
+}
+p {
+	font-weight: 400;
 }
 a:link {
 	color: #E69A8DFF;
@@ -51,7 +54,20 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: #E69A8DFF;
+}
+input[type=submit] {
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
 	margin: 4px 2px;
 	cursor: pointer;
 	background-color: #E69A8DFF;
@@ -66,6 +82,3 @@ button {
 	max-width: 80%;
 }
 
-form {
-	font-size: 20px;
-}
