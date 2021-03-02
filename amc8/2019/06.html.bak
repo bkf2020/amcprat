@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2019 AMC8 Problem 6</span> <a href="06.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">There are 81 grid points (uniformly spaced) in the square shown in the diagram below, including the points on the edges. Point <img alt="$P$" class="latex" height="12" src="//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14"/> is the center of the square. Given that point <img alt="$Q$" class="latex" height="16" src="//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png" style="vertical-align: -3px" width="13"/> is randomly chosen from among the other 80 points, what is the probability that line <img alt="$PQ$" class="latex" height="16" src="//latex.artofproblemsolving.com/7/a/b/7ab17967324fc2b12349c0610c6c256f4c829162.png" style="vertical-align: -3px" width="27"/> is a line of symmetry for the square?<br/>
+<img alt='[asy]
+size(130);
+defaultpen(fontsize(11));
+int i, j;
+for(i=0; i&lt;9; i=i+1)
+{
+for(j=0; j&lt;9; j=j+1)
+if((i==4) &amp;&amp; (j==4))
+{
+dot((i,j),linewidth(5));
+} else {
+dot((i,j),linewidth(3));
+}
+}
+dot("$P$",(4,4),NE);
+draw((0,0)--(0,8)--(8,8)--(8,0)--cycle);
+[/asy]' class="asy-image" height="218" src="//latex.artofproblemsolving.com/d/6/f/d6fb63de06d0254a473310c893c7b6f05ae1f5d0.png" width="218"/><br/>
+<img alt="$\textbf{(A) } \frac{1}{5}
+\qquad\textbf{(B) } \frac{1}{4}
+\qquad\textbf{(C) } \frac{2}{5}
+\qquad\textbf{(D) } \frac{9}{20}
+\qquad\textbf{(E) } \frac{1}{2}$" class="latex" height="38" src="//latex.artofproblemsolving.com/2/c/2/2c23f36699906cb4a7fbc921eea40f86b1aaa420.png" style="vertical-align: -13px" width="381"/></div></body></html>

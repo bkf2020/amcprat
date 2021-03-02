@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2019 AMC8 Problem 11</span> <a href="11.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">The eighth grade class at Lincoln Middle School has <img alt="$93$" class="latex" height="12" src="//latex.artofproblemsolving.com/a/7/2/a72f553051fe3bcf42965f99d1a10ac6efed037e.png" width="17"/> students. Each student takes a math class or a foreign language class or both. There are <img alt="$70$" class="latex" height="12" src="//latex.artofproblemsolving.com/a/a/9/aa94edfb9739dcc66dad90f7dd5c148f44a57e2c.png" width="17"/> eighth graders taking a math class, and there are <img alt="$54$" class="latex" height="13" src="//latex.artofproblemsolving.com/b/1/c/b1cb5bdce2d06d2419066a2b55ab01d824217bd2.png" style="vertical-align: 0px" width="18"/> eighth graders taking a foreign language class. How many eighth graders take <i>only</i> a math class and <i>not</i> a foreign language class?<br/>
+<br/>
+<br/>
+<img alt="$\textbf{(A) }16\qquad
+\textbf{(B) }23\qquad
+\textbf{(C) }31\qquad
+\textbf{(D) }39\qquad
+\textbf{(E) }70\qquad$" class="latex" height="17" src="//latex.artofproblemsolving.com/0/8/9/0891f550b7093e6e329da38ade1679183ed66ca7.png" style="vertical-align: -4px" width="398"/></div></body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2020 AMC12B Problem 18</span> <a href="18.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">In square <span style="white-space:pre;"><img alt="$ABCD$" class="latex" height="13" src="//latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png" width="57"/>,</span> points <img alt="$E$" class="latex" height="12" src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" width="14"/> and <img alt="$H$" class="latex" height="12" src="//latex.artofproblemsolving.com/b/1/9/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png" width="16"/> lie on <img alt="$\overline{AB}$" class="latex" height="15" src="//latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png" width="28"/> and <span style="white-space:pre;"><img alt="$\overline{DA}$" class="latex" height="15" src="//latex.artofproblemsolving.com/b/6/6/b6691251a362837413262d094d29f92be951d579.png" width="29"/>,</span> respectively, so that <img alt="$AE=AH.$" class="latex" height="13" src="//latex.artofproblemsolving.com/1/6/a/16a87b2115b98db9b77242776453dfc23f104550.png" width="85"/> Points <img alt="$F$" class="latex" height="12" src="//latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" width="14"/> and <img alt="$G$" class="latex" height="12" src="//latex.artofproblemsolving.com/6/e/2/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" width="14"/> lie on <img alt="$\overline{BC}$" class="latex" height="15" src="//latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png" width="29"/> and <span style="white-space:pre;"><img alt="$\overline{CD}$" class="latex" height="15" src="//latex.artofproblemsolving.com/c/e/0/ce0bfc603f9a044e308b1a1fdadca917e81ad2dd.png" width="30"/>,</span> respectively, and points <img alt="$I$" class="latex" height="12" src="//latex.artofproblemsolving.com/0/2/7/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" width="9"/> and <img alt="$J$" class="latex" height="12" src="//latex.artofproblemsolving.com/a/b/b/abb5588023cfa1ac14643e9778699f03eecc57a3.png" width="12"/> lie on <img alt="$\overline{EH}$" class="latex" height="15" src="//latex.artofproblemsolving.com/8/4/2/842af13d9d45f591c45c8390ee791ce1c7ff312a.png" width="31"/> so that <img alt="$\overline{FI} \perp \overline{EH}$" class="latex" height="15" src="//latex.artofproblemsolving.com/6/d/0/6d0cc93a9a4bc9f51becd932374001060528d0ad.png" width="79"/> and <span style="white-space:pre;"><img alt="$\overline{GJ} \perp \overline{EH}$" class="latex" height="15" src="//latex.artofproblemsolving.com/f/a/d/fada193840a5c59d394522b2d051657c9f60dd6e.png" width="82"/>.</span> See the figure below. Triangle <span style="white-space:pre;"><img alt="$AEH$" class="latex" height="13" src="//latex.artofproblemsolving.com/2/c/e/2cecf090af263a60467ac6a2353b7c6d14be9d3d.png" width="44"/>,</span> quadrilateral <span style="white-space:pre;"><img alt="$BFIE$" class="latex" height="12" src="//latex.artofproblemsolving.com/1/2/1/121370fc4f2ea9c485f503b0213aadd10aa2d744.png" width="52"/>,</span> quadrilateral <span style="white-space:pre;"><img alt="$DHJG$" class="latex" height="12" src="//latex.artofproblemsolving.com/2/f/e/2fe56bd61b3c08af4b56d388a19a064f67c582ed.png" width="58"/>,</span> and pentagon <img alt="$FCGJI$" class="latex" height="12" src="//latex.artofproblemsolving.com/9/5/c/95c92822b575b7ef8c33f2bb4ae5d4ad7888149f.png" width="64"/> each has area <img alt="$1.$" class="latex" height="12" src="//latex.artofproblemsolving.com/6/c/d/6cdd1b53e5faf7a118222e4b7571d1e9afa0cf56.png" style="vertical-align: 0px" width="12"/> What is <span style="white-space:pre;"><img alt="$FI^2$" class="latex" height="15" src="//latex.artofproblemsolving.com/3/e/6/3e6b4a4fb3cea954381809f7c02989e02e188bb7.png" width="29"/>?</span><br/>
+<img alt='[asy]
+real x=2sqrt(2);
+real y=2sqrt(16-8sqrt(2))-4+2sqrt(2);
+real z=2sqrt(8-4sqrt(2));
+pair A, B, C, D, E, F, G, H, I, J;
+A = (0,0);
+B = (4,0);
+C = (4,4);
+D = (0,4);
+E = (x,0);
+F = (4,y);
+G = (y,4);
+H = (0,x);
+I = F + z * dir(225);
+J = G + z * dir(225);
+
+draw(A--B--C--D--A);
+draw(H--E);
+draw(J--G^^F--I);
+draw(rightanglemark(G, J, I), linewidth(.5));
+draw(rightanglemark(F, I, E), linewidth(.5));
+
+dot("$A$", A, S);
+dot("$B$", B, S);
+dot("$C$", C, dir(90));
+dot("$D$", D, dir(90));
+dot("$E$", E, S);
+dot("$F$", F, dir(0));
+dot("$G$", G, N);
+dot("$H$", H, W);
+dot("$I$", I, SW);
+dot("$J$", J, SW);
+
+[/asy]' class="asy-image" height="245" src="//latex.artofproblemsolving.com/4/8/9/4892da26cb6334b359f58d4007f89460883779ab.png" width="252"/><br/>
+<img alt="$\textbf{(A) } \frac{7}{3} \qquad \textbf{(B) } 8-4\sqrt2 \qquad \textbf{(C) } 1+\sqrt2 \qquad \textbf{(D) } \frac{7}{4}\sqrt2 \qquad \textbf{(E) } 2\sqrt2$" class="latex" height="37" src="//latex.artofproblemsolving.com/d/4/2/d429f46568204bf115dba64c23150377cfb1032d.png" style="vertical-align: -13px" width="512"/></div></body></html>
