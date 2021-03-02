@@ -1,20 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: white;
+}
+div.cmty-view-post-item-text {
+	font-size: 18px;
+	margin: 0 auto;
+	max-width: 1344px;
 }
 p {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
-}
-h1 {
-	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	max-width: 1344px;
 }
 h2 {
-	font-family: 'Roboto', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1344px;
 }
 li {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
+}
+iframe {
+	max-width: 100%;
+}
+img.latexcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.asy-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
