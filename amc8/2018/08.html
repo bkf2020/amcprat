@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2018 AMC8 Problem 8</span> <a href="08.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">Mr. Garcia asked the members of his health class how many days last week they exercised for at least 30 minutes. The results are summarized in the following bar graph, where the heights of the bars represent the number of students.<br/>
+<br/>
+<img alt='[asy]
+size(8cm);
+void drawbar(real x, real h) {
+  fill((x-0.15,0.5)--(x+0.15,0.5)--(x+0.15,h)--(x-0.15,h)--cycle,gray);
+}
+draw((0.5,0.5)--(7.5,0.5)--(7.5,5)--(0.5,5)--cycle);
+for (real i=1; i&lt;5; i=i+0.5) {
+  draw((0.5,i)--(7.5,i),gray);
+}
+drawbar(1.0,1.0);
+drawbar(2.0,2.0);
+drawbar(3.0,1.5);
+drawbar(4.0,3.5);
+drawbar(5.0,4.5);
+drawbar(6.0,2.0);
+drawbar(7.0,1.5);
+for (int i=1; i&lt;8; ++i) {
+  label("$"+string(i)+"$",(i,0.25));
+}
+for (int i=1; i&lt;9; ++i) {
+  label("$"+string(i)+"$",(0.5,0.5*(i+1)),W);
+}
+label("Number of Days of Exercise",(4,-0.1));
+label(rotate(90)*"Number of Students",(-0.1,2.75));
+[/asy]' class="asy-image" height="262" src="https://latex.artofproblemsolving.com/f/7/a/f7add6258fd09de75421fb0d08e39071b65b128c.png" width="378"/>What was the mean number of days of exercise last week, rounded to the nearest hundredth, reported by the students in Mr. Garcia's class?<br/>
+<br/>
+<img alt="$\textbf{(A) } 3.50 \qquad \textbf{(B) } 3.57 \qquad \textbf{(C) } 4.36 \qquad \textbf{(D) } 4.50 \qquad \textbf{(E) } 5.00$" class="latex" height="17" src="https://latex.artofproblemsolving.com/d/2/1/d21368551ba11eedc173f69770c339e6bce491d3.png" style="vertical-align: -4px" width="468"/></div></body></html>

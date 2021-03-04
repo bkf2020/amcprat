@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2018 AIME I Problem 10</span> <a href="10.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">The wheel shown below consists of two circles and five spokes, with a label at each point where a spoke meets a circle. A bug walks along the wheel, starting at point <span style="white-space:pre;"><img alt="\(A\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/b/c/fbc82d5aaf523234dba8466eceff5c138eca8289.png" width="13"/>.</span> At every step of the process, the bug walks from one labeled point to an adjacent labeled point. Along the inner circle the bug only walks in a counterclockwise direction, and along the outer circle the bug only walks in a clockwise direction. For example, the bug could travel along the path <span style="white-space:pre;"><img alt="\(AJABCHCHIJA\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/5/0/f/50fa3caca72f3cb2cf0842ff297fcf6052e95a5b.png" width="150"/>,</span> which has <img alt="\(10\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/e/f/b/efbf520d3a457b2ee21d1543a2b41f4438f9d632.png" style="vertical-align: 0px" width="17"/> steps. Let <img alt="\(n\)" class="latex" height="8" src="https://latex.artofproblemsolving.com/b/a/4/ba46618ec0ffc257b9651066848682ffc61d2ba0.png" width="10"/> be the number of paths with <img alt="\(15\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/8/f/08f2eac464bccac8a24298f55ee91e4277addf32.png" style="vertical-align: 0px" width="17"/> steps that begin and end at point <span style="white-space:pre;"><img alt="\(A\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/b/c/fbc82d5aaf523234dba8466eceff5c138eca8289.png" width="13"/>.</span> Find the remainder when <img alt="\(n\)" class="latex" height="8" src="https://latex.artofproblemsolving.com/b/a/4/ba46618ec0ffc257b9651066848682ffc61d2ba0.png" width="10"/> is divided by <span style="white-space:pre;"><img alt="\(1000\)" class="latex" height="13" src="https://latex.artofproblemsolving.com/a/f/0/af09a553632ac3fce558fa0bba12f156d3ca58e8.png" style="vertical-align: 0px" width="35"/>.</span><br/>
+<br/>
+<img alt='[asy]
+unitsize(32);
+draw(unitcircle);
+draw(scale(2) * unitcircle);
+for(int d = 90; d &lt; 360 + 90; d += 72){
+draw(2 * dir(d) -- dir(d));
+}
+
+real s = 4;
+dot(1 * dir( 90), linewidth(s));
+dot(1 * dir(162), linewidth(s));
+dot(1 * dir(234), linewidth(s));
+dot(1 * dir(306), linewidth(s));
+dot(1 * dir(378), linewidth(s));
+dot(2 * dir(378), linewidth(s));
+dot(2 * dir(306), linewidth(s));
+dot(2 * dir(234), linewidth(s));
+dot(2 * dir(162), linewidth(s));
+dot(2 * dir( 90), linewidth(s));
+
+defaultpen(fontsize(10pt));
+real r = 0.05;
+label("$A$", (1-r) * dir( 90), -dir( 90));
+label("$B$", (1-r) * dir(162), -dir(162));
+label("$C$", (1-r) * dir(234), -dir(234));
+label("$D$", (1-r) * dir(306), -dir(306));
+label("$E$", (1-r) * dir(378), -dir(378));
+label("$F$", (2+r) * dir(378), dir(378));
+label("$G$", (2+r) * dir(306), dir(306));
+label("$H$", (2+r) * dir(234), dir(234));
+label("$I$", (2+r) * dir(162), dir(162));
+label("$J$", (2+r) * dir( 90), dir( 90));
+[/asy]' class="asy-image" height="235" src="https://latex.artofproblemsolving.com/5/e/1/5e14e54dea77f9fbb819cf7f81efad0cfbce0990.png" width="245"/></div></body></html>

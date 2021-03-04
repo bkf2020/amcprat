@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2015 AMC10B Problem 22</span> <a href="22.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">In the figure shown below, <img alt="$ABCDE$" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/1/3/f13a96240c51d61ba3733d9f5c3020fa92ec4136.png" width="72"/> is a regular pentagon and <span style="white-space:nowrap;"><img alt="$AG=1$" class="latex" height="13" src="https://latex.artofproblemsolving.com/a/3/7/a37653c22fea23a9dbf214f7f21fabb0134c8967.png" style="vertical-align: 0px" width="60"/>.</span> What is <span style="white-space:nowrap;"><img alt="$FG+JH+CD$" class="latex" height="14" src="https://latex.artofproblemsolving.com/8/7/1/871c8c70ad81cf23f3b4ba4c6f2647b1b7e6675a.png" style="vertical-align: -1px" width="130"/>?</span><br/>
+<img alt='[asy]
+import cse5;pathpen=black;pointpen=black;
+size(2inch);
+pair A=dir(90), B=dir(18), C=dir(306), D=dir(234), E=dir(162);
+D(MP("A",A,A)--MP("B",B,B)--MP("C",C,C)--MP("D",D,D)--MP("E",E,E)--cycle,linewidth(1.5));
+D(A--C--E--B--D--cycle);
+pair F=IP(A--D,B--E), G=IP(B--E,C--A), H=IP(C--A,B--D), I=IP(D--B,E--C), J=IP(C--E,D--A);
+D(MP("F",F,dir(126))--MP("I",I,dir(270))--MP("G",G,dir(54))--MP("J",J,dir(198))--MP("H",H,dir(342))--cycle);
+[/asy]' class="asy-image" height="228" src="https://latex.artofproblemsolving.com/9/e/b/9eb87bd6f2489bc62d9d19676052403a106dfedd.png" width="242"/><br/>
+<br/>
+<img alt="$\textbf{(A) } 3
+\qquad\textbf{(B) } 12-4\sqrt5
+\qquad\textbf{(C) } \dfrac{5+2\sqrt5}{3}
+\qquad\textbf{(D) } 1+\sqrt5
+\qquad\textbf{(E) } \dfrac{11+11\sqrt5}{10}
+$" class="latex" height="41" src="https://latex.artofproblemsolving.com/e/0/3/e03549876b77b2b2f180c0b3c6d405130d6b9a40.png" style="vertical-align: -13px" width="600"/></div></body></html>

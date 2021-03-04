@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2015 AIME II Problem 9</span> <a href="09.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">A cylindrical barrel with radius <img alt="$4$" class="latex" height="12" src="https://latex.artofproblemsolving.com/c/7/c/c7cab1a05e1e0c1d51a6a219d96577a16b7abf9d.png" style="vertical-align: 0px" width="9"/> feet and height <img alt="$10$" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/c/6/fc606f7f1e530731ab4f1cc364c01dc64a4455ee.png" style="vertical-align: 0px" width="17"/> feet is full of water. A solid cube with side length <img alt="$8$" class="latex" height="12" src="https://latex.artofproblemsolving.com/8/4/5/8455f3b5cb3b4880b8c9d782a5c1f0334db819eb.png" width="8"/> feet is set into the barrel so that the diagonal of the cube is vertical. The volume of water thus displaced is <img alt="$v$" class="latex" height="8" src="https://latex.artofproblemsolving.com/a/9/f/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" width="9"/> cubic feet. Find <span style="white-space:nowrap;"><img alt="$v^2$" class="latex" height="15" src="https://latex.artofproblemsolving.com/d/d/3/dd3f1508c9d4c0d26387390fc01db56f894d1500.png" width="15"/>.</span><br/>
+<br/>
+<img alt='[asy]
+import three; import solids;
+size(5cm);
+currentprojection=orthographic(1,-1/6,1/6);
+
+draw(surface(revolution((0,0,0),(-2,-2*sqrt(3),0)--(-2,-2*sqrt(3),-10),Z,0,360)),white,nolight);
+
+triple A =(8*sqrt(6)/3,0,8*sqrt(3)/3), B = (-4*sqrt(6)/3,4*sqrt(2),8*sqrt(3)/3), C = (-4*sqrt(6)/3,-4*sqrt(2),8*sqrt(3)/3), X = (0,0,-2*sqrt(2));
+
+draw(X--X+A--X+A+B--X+A+B+C);
+draw(X--X+B--X+A+B);
+draw(X--X+C--X+A+C--X+A+B+C);
+draw(X+A--X+A+C);
+draw(X+C--X+C+B--X+A+B+C,linetype("2 4"));
+draw(X+B--X+C+B,linetype("2 4"));
+
+draw(surface(revolution((0,0,0),(-2,-2*sqrt(3),0)--(-2,-2*sqrt(3),-10),Z,0,240)),white,nolight);
+draw((-2,-2*sqrt(3),0)..(4,0,0)..(-2,2*sqrt(3),0));
+draw((-4*cos(atan(5)),-4*sin(atan(5)),0)--(-4*cos(atan(5)),-4*sin(atan(5)),-10)..(4,0,-10)..(4*cos(atan(5)),4*sin(atan(5)),-10)--(4*cos(atan(5)),4*sin(atan(5)),0));
+draw((-2,-2*sqrt(3),0)..(-4,0,0)..(-2,2*sqrt(3),0),linetype("2 4"));
+[/asy]' class="asy-image" height="238" src="https://latex.artofproblemsolving.com/7/5/d/75de39adfa735e8d8b65a77fa6a8807ba3f4bef1.png" width="138"/></div></body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2017 AMC10A Problem 3</span> <a href="03.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">Tamara has three rows of two 6-feet by 2-feet flower beds in her garden. The beds are separated and also surrounded by 1-foot-wide walkways, as shown on the diagram. What is the total area of the walkways, in square feet?<br/>
+<img alt='[asy]
+unitsize(0.7cm);
+path p1 = (0,0)--(15,0)--(15,10)--(0,10)--cycle;
+fill(p1,lightgray);
+draw(p1);
+for (int i = 1; i &lt;= 8; i += 7) {
+   for (int j = 1; j &lt;= 7; j += 3 ) {
+      path p2 = (i,j)--(i+6,j)--(i+6,j+2)--(i,j+2)--cycle;
+      draw(p2);
+      fill(p2,white);
+   }
+}
+draw((0,8)--(1,8),Arrows);
+label("1",(0.5,8),S);
+draw((7,8)--(8,8),Arrows);
+label("1",(7.5,8),S);
+draw((14,8)--(15,8),Arrows);
+label("1",(14.5,8),S);
+draw((11,0)--(11,1),Arrows);
+label("1",(11,0.5),W);
+draw((11,3)--(11,4),Arrows);
+label("1",(11,3.5),W);
+draw((11,6)--(11,7),Arrows);
+label("1",(11,6.5),W);
+draw((11,9)--(11,10),Arrows);
+label("1",(11,9.5),W);
+label("6",(4,1),N);
+label("2",(1,2),E);
+[/asy]' class="asy-image" height="332" src="https://latex.artofproblemsolving.com/d/8/4/d8413e83a8be21764277aaf7081a3a395aa9fb5e.png" width="498"/><br/>
+<img alt="$\textbf{(A) }72 \qquad
+\textbf{(B) }78 \qquad
+\textbf{(C) }90 \qquad
+\textbf{(D) }120 \qquad
+\textbf{(E) }150 $" class="latex" height="17" src="https://latex.artofproblemsolving.com/b/1/c/b1c66314c04c130a49f74de0e45dedc0148bd49a.png" style="vertical-align: -4px" width="416"/></div></body></html>

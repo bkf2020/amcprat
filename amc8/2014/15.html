@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2014 AMC8 Problem 15</span> <a href="15.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">The circumference of the circle with center <img alt="$O$" class="latex" height="12" src="https://latex.artofproblemsolving.com/5/1/d/51da37d984564162c87710ca27bea422f657fb73.png" width="13"/> is divided into 12 equal arcs, marked the letters <img alt="$A$" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" width="13"/> through <img alt="$L$" class="latex" height="12" src="https://latex.artofproblemsolving.com/8/5/9/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" width="12"/> as seen below. What is the number of degrees in the sum of the angles <img alt="$x$" class="latex" height="8" src="https://latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" width="10"/> and <span style="white-space:nowrap;"><img alt="$y$" class="latex" height="11" src="https://latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" style="vertical-align: -3px" width="9"/>?</span><br/>
+<br/>
+<img alt='[asy]
+size(230);
+defaultpen(linewidth(0.65));
+pair O=origin;
+pair[] circum = new pair[12];
+string[] let = {"$A$","$B$","$C$","$D$","$E$","$F$","$G$","$H$","$I$","$J$","$K$","$L$"};
+draw(unitcircle);
+for(int i=0;i&lt;=11;i=i+1)
+{
+circum[i]=dir(120-30*i);
+dot(circum[i],linewidth(2.5));
+label(let[i],circum[i],2*dir(circum[i]));
+}
+draw(O--circum[4]--circum[0]--circum[6]--circum[8]--cycle);
+label("$x$",circum[0],2.75*(dir(circum[0]--circum[4])+dir(circum[0]--circum[6])));
+label("$y$",circum[6],1.75*(dir(circum[6]--circum[0])+dir(circum[6]--circum[8])));
+label("$O$",O,dir(60));
+[/asy]' class="asy-image" height="378" src="https://latex.artofproblemsolving.com/3/7/1/371f42726ae702ba57a0002d787f0e3c62767ec2.png" width="385"/><br/>
+<br/>
+<img alt="$\textbf{(A) }75\qquad\textbf{(B) }80\qquad\textbf{(C) }90\qquad\textbf{(D) }120\qquad \textbf{(E) }150$" class="latex" height="17" src="https://latex.artofproblemsolving.com/e/9/6/e965653bdc97d55c3d1adca2c0598a637a806d02.png" style="vertical-align: -4px" width="416"/></div></body></html>

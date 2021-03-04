@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2016 AMC10B Problem 19</span> <a href="19.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">Rectangle <img alt="$ABCD$" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/9/e/f9efaf9474c5658c4089523e2aff4e11488f8603.png" width="57"/> has <img alt="$AB=5$" class="latex" height="13" src="https://latex.artofproblemsolving.com/7/f/f/7ff29028b2432b4e2cf3d924ac82114813de066d.png" width="61"/> and <span style="white-space:nowrap;"><img alt="$BC=4$" class="latex" height="13" src="https://latex.artofproblemsolving.com/a/5/3/a5322c7f896502c208bbb4a354efc8d212620667.png" style="vertical-align: 0px" width="62"/>.</span> Point <img alt="$E$" class="latex" height="12" src="https://latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" width="14"/> lies on <img alt="$\overline{AB}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/8/4/0/840e2b592390eb6ec918fa6f3292716ce170de66.png" width="28"/> so that <span style="white-space:nowrap;"><img alt="$EB=1$" class="latex" height="13" src="https://latex.artofproblemsolving.com/9/d/c/9dccdc7a8cf2b85c2ab8fe806ff4c9659986bd04.png" style="vertical-align: 0px" width="61"/>,</span> point <img alt="$G$" class="latex" height="12" src="https://latex.artofproblemsolving.com/6/e/2/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" width="14"/> lies on <img alt="$\overline{BC}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/e/3/3/e33fe7d65facd8868f58b6e94ddc7f153a5a3f9f.png" width="29"/> so that <span style="white-space:nowrap;"><img alt="$CG=1$" class="latex" height="13" src="https://latex.artofproblemsolving.com/f/0/f/f0f0d1a15a2585561d88c536ceb3956d75077430.png" style="vertical-align: 0px" width="61"/>.</span> and point <img alt="$F$" class="latex" height="12" src="https://latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" width="14"/> lies on <img alt="$\overline{CD}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/c/e/0/ce0bfc603f9a044e308b1a1fdadca917e81ad2dd.png" width="30"/> so that <span style="white-space:nowrap;"><img alt="$DF=2$" class="latex" height="12" src="https://latex.artofproblemsolving.com/4/4/0/4402ab2cb45d04e5a2b56c449191e4896e5a227f.png" width="62"/>.</span> Segments <img alt="$\overline{AG}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/6/3/f/63f0f6aa257bd96696d97454bb777b1a283069e8.png" width="28"/> and <img alt="$\overline{AC}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" width="28"/> intersect <img alt="$\overline{EF}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/e/d/0/ed0f6a692f19a65fe60fe5745826792f3fd1d57e.png" width="29"/> at <img alt="$Q$" class="latex" height="16" src="https://latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png" style="vertical-align: -3px" width="13"/> and <span style="white-space:nowrap;"><img alt="$P$" class="latex" height="12" src="https://latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14"/>,</span> respectively. What is the value of <span style="white-space:nowrap;"><img alt="$\frac{PQ}{EF}$" class="latex" height="37" src="https://latex.artofproblemsolving.com/a/c/5/ac540003b4d96d7613cbbf4bc74ead4dbbde68fa.png" style="vertical-align: -12px" width="31"/>?</span><br/>
+<br/>
+<br/>
+<img alt='[asy] pair A1=(2,0),A2=(4,4);
+pair B1=(0,4),B2=(5,1);
+pair C1=(5,0),C2=(0,4); 
+draw(A1--A2);
+draw(B1--B2);
+draw(C1--C2);
+draw((0,0)--B1--(5,4)--C1--cycle);
+dot((20/7,12/7));
+dot((3.07692307692,2.15384615384));
+label("$Q$",(3.07692307692,2.15384615384),N);
+label("$P$",(20/7,12/7),W);
+label("$A$",(0,4), NW);
+label("$B$",(5,4), NE);
+label("$C$",(5,0),SE);
+label("$D$",(0,0),SW);
+label("$F$",(2,0),S); label("$G$",(5,1),E);
+label("$E$",(4,4),N);
+
+dot(A1); dot(A2);
+dot(B1); dot(B2);
+dot(C1); dot(C2);
+dot((0,0)); dot((5,4));[/asy]' class="asy-image" height="208" src="https://latex.artofproblemsolving.com/5/c/2/5c237cbb147641c53bd553168f1d6f71dc7facd1.png" width="252"/><br/>
+<br/>
+<img alt="$\textbf{(A)}~\frac{\sqrt{13}}{16} \qquad
+\textbf{(B)}~\frac{\sqrt{2}}{13} \qquad
+\textbf{(C)}~\frac{9}{82} \qquad
+\textbf{(D)}~\frac{10}{91}\qquad
+\textbf{(E)}~\frac19$" class="latex" height="41" src="https://latex.artofproblemsolving.com/f/7/e/f7e9a842df00804dd7f4c7aba5c49602ebbde2f6.png" style="vertical-align: -13px" width="425"/></div></body></html>

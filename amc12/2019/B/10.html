@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2019 AMC12B Problem 10</span> <a href="10.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">The figure below is a map showing <img alt="$12$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/d/f/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" style="vertical-align: 0px" width="17"/> cities and <img alt="$17$" class="latex" height="12" src="https://latex.artofproblemsolving.com/b/7/6/b7616a230c77f0d9a577e5bca01aa06f1c35c457.png" style="vertical-align: 0px" width="18"/> roads connecting certain pairs of cities. Paula wishes to travel along exactly <img alt="$13$" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/3/0/030e19e4e2f1c074127cb50581e8496470c5419f.png" style="vertical-align: 0px" width="17"/> of those roads, starting at city <img alt="$A$" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" width="13"/> and ending at city <img alt="$L,$" class="latex" height="16" src="https://latex.artofproblemsolving.com/e/d/2/ed22e596b436e3d8a18552fb7eb6c61ca1a11500.png" style="vertical-align: -3px" width="16"/> without traveling along any portion of a road more than once. (Paula <i>is</i> allowed to visit a city more than once.)  How many different routes can Paula take?<br/>
+<br/>
+<img alt='[asy]
+import olympiad;
+unitsize(50);
+for (int i = 0; i &lt; 3; ++i) {
+for (int j = 0; j &lt; 4; ++j) {
+pair A = (j,i);
+dot(A);
+
+}
+}
+for (int i = 0; i &lt; 3; ++i) {
+for (int j = 0; j &lt; 4; ++j) {
+if (j != 3) {
+draw((j,i)--(j+1,i));
+}
+if (i != 2) {
+draw((j,i)--(j,i+1));
+}
+}
+}
+label("$A$", (0,2), W); 
+label("$L$", (3,0), E); 
+[/asy]' class="asy-image" height="188" src="https://latex.artofproblemsolving.com/2/6/8/268cd67d45f5b55a849d4cc611db555eb4e89633.png" width="295"/><br/>
+<br/>
+<img alt="$\textbf{(A) } 0 \qquad\textbf{(B) } 1 \qquad\textbf{(C) } 2 \qquad\textbf{(D) } 3\qquad\textbf{(E) } 4$" class="latex" height="17" src="https://latex.artofproblemsolving.com/5/4/6/546cbc2697d13680b682612a01cc38d791453818.png" style="vertical-align: -4px" width="353"/></div></body></html>
