@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2019 AMC10B Problem 20</span> <a href="20.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">As shown in the figure, line segment <img alt="$\overline{AD}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/c/f/b/cfbb4c52e011ceed6e813118a7d59e931af444a2.png" width="29"/> is trisected by points <img alt="$B$" class="latex" height="12" src="https://latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" width="14"/> and <img alt="$C$" class="latex" height="12" src="https://latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" width="14"/> so that <img alt="$AB=BC=CD=2.$" class="latex" height="13" src="https://latex.artofproblemsolving.com/9/9/9/999d7441d5e2700b8d711d2a01c1aba1ca7045a3.png" width="172"/> Three semicircles of radius <img alt="$1,$" class="latex" height="15" src="https://latex.artofproblemsolving.com/5/b/f/5bf27edd6ee0c25241392922eca9b9c9144f4d73.png" style="vertical-align: -3px" width="13"/> <img alt="$\overarc{AEB},\overarc{BFC},$" class="latex" height="27" src="https://latex.artofproblemsolving.com/a/c/6/ac603131fa15dbbe8226da13de0c060d3ab83494.png" style="vertical-align: -3px" width="81"/> and <img alt="$\overarc{CGD},$" class="latex" height="27" src="https://latex.artofproblemsolving.com/f/6/5/f6525c28738046d9a3d2a3c859581d43e01071d8.png" style="vertical-align: -3px" width="41"/> have their diameters on <img alt="$\overline{AD},$" class="latex" height="19" src="https://latex.artofproblemsolving.com/4/3/f/43f0fccd896266f9c6a2c01ec87ae77e449d7df7.png" style="vertical-align: -3px" width="33"/> and are tangent to line <img alt="$EG$" class="latex" height="12" src="https://latex.artofproblemsolving.com/9/2/7/927d4689159fbeb80f7b468ca9ae96b48e926312.png" width="28"/> at <img alt="$E,F,$" class="latex" height="16" src="https://latex.artofproblemsolving.com/1/5/7/15702fb3f7b1aeaefff24913baf2a387bdd2d54a.png" style="vertical-align: -3px" width="38"/> and <img alt="$G,$" class="latex" height="16" src="https://latex.artofproblemsolving.com/1/9/5/195d683ae02c57abf49ebe0889c6f2ea7bcc513e.png" style="vertical-align: -3px" width="18"/> respectively. A circle of radius <img alt="$2$" class="latex" height="12" src="https://latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" width="8"/> has its center on <img alt="$F. $" class="latex" height="12" src="https://latex.artofproblemsolving.com/1/0/f/10f420abb08e23d5bec33af7ceb22e3ab4abcdd8.png" width="15"/> The area of the region inside the circle but outside the three semicircles, shaded in the figure, can be expressed in the form<br/>
+<img alt="\[\frac{a}{b}\cdot\pi-\sqrt{c}+d,\]" class="latexcenter" height="32" src="https://latex.artofproblemsolving.com/d/8/b/d8bdd0e53bdd2b5b50aea9510be4bd6c45e2b867.png" width="117"/>where <img alt="$a,b,c,$" class="latex" height="16" src="https://latex.artofproblemsolving.com/d/8/b/d8b8490a47ba3063da2731316f5d65dc5cf731ed.png" style="vertical-align: -3px" width="45"/> and <img alt="$d$" class="latex" height="12" src="https://latex.artofproblemsolving.com/9/6/a/96ab646de7704969b91c76a214126b45f2b07b25.png" width="9"/> are positive integers and <img alt="$a$" class="latex" height="8" src="https://latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png" width="9"/> and <img alt="$b$" class="latex" height="12" src="https://latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" width="8"/> are relatively prime. What is <span style="white-space:pre;"><img alt="$a+b+c+d$" class="latex" height="14" src="https://latex.artofproblemsolving.com/e/9/4/e947add5766b9f26f6dfe73d9425d87664416459.png" style="vertical-align: -1px" width="101"/>?</span><br/>
+<br/>
+<img alt='[asy]
+size(6cm);
+filldraw(circle((0,0),2), gray(0.7));
+filldraw(arc((0,-1),1,0,180) -- cycle, gray(1.0));
+filldraw(arc((-2,-1),1,0,180) -- cycle, gray(1.0));
+filldraw(arc((2,-1),1,0,180) -- cycle, gray(1.0));
+dot((-3,-1));
+label("$A$",(-3,-1),S);
+dot((-2,0));
+label("$E$",(-2,0),NW);
+dot((-1,-1));
+label("$B$",(-1,-1),S);
+dot((0,0));
+label("$F$",(0,0),N);
+dot((1,-1));
+label("$C$",(1,-1), S);
+dot((2,0));
+label("$G$", (2,0),NE);
+dot((3,-1));
+label("$D$", (3,-1), S);
+[/asy]' class="asy-image" height="178" src="https://latex.artofproblemsolving.com/b/e/5/be5538c17cf2af3d37027f4996d5a8ae5cd4aef1.png" width="285"/><br/>
+<img alt="$\textbf{(A) } 13 \qquad\textbf{(B) } 14 \qquad\textbf{(C) } 15 \qquad\textbf{(D) } 16\qquad\textbf{(E) } 17$" class="latex" height="17" src="https://latex.artofproblemsolving.com/f/b/a/fba780123ac73ec65eb5e929185eb76a0dea32fc.png" style="vertical-align: -4px" width="398"/></div></body></html>
