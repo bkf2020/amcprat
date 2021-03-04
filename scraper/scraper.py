@@ -20,9 +20,9 @@ def is_valid_test_name(s):
 print("Welcome to the AoPS Scrapper! First, make sure you have created the index.html file.")
 print("If you are unsure of what this is, please look at the README.md file.")
 try:
-    input("Press enter if you are ready.")
+	input("Press enter if you are ready.")
 except SyntaxError:
-    pass
+	pass
 
 year_str = input("Enter the year: ")
 while (not is_int(year_str)):
