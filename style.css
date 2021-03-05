@@ -3,7 +3,7 @@
 body {
 	color: white;
 	font-weight: 400;
-	font-size: 26px;
+	font-size: 24px;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #52077a;
 	-webkit-font-smoothing: antialiased;
@@ -53,24 +53,17 @@ button {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	margin: 4px 2px;
 	cursor: pointer;
 	background-color: #E69A8DFF;
 }
-input[type=submit] {
-	border: none;
-	color: white;
+button.submitbtn {
+	font-size: 18px;
 	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	margin: 4px 2px;
-	cursor: pointer;
-	background-color: #E69A8DFF;
+}
+button.getproblems {
+	font-size: 28px;
 }
 .header {
 	margin: 0 auto;
@@ -81,4 +74,22 @@ input[type=submit] {
 	margin: 0 auto;
 	max-width: 80%;
 }
+.selectordiv {
+	padding: 30px;
+	background-color: purple;
+	border-style: solid;
+	border-color: white;
+	text-align: left;
+}
 
+input.largercheckbox {
+	transform : scale(1.5);
+}
+
+main {
+	display: grid;
+	max-width: 900px;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 450px);
+	grid-gap: 0px;
+}
