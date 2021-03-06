@@ -5,39 +5,33 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="select.js"></script>
 </head>
-<body onload="getProblems()">
+<body>
 	<div class="header">
 		<h1>AMCPRAT: your practice problems</h1>
 	</div>
 
 	<div class="wrapper">
 		<center>
-			<iframe src="amc10/2021/A/1.html" width="80%" height="300px">
-					Sorry, your browser does not understand iframes
-			</iframe>
-			<form>
-				<label>Your answer: </label>
-				<input type="radio" name="answer0" value="A" checked>A
-				<input type="radio" name="answer0" value="B">B
-				<input type="radio" name="answer0" value="C">C
-				<input type="radio" name="answer0" value="D">D
-				<input type="radio" name="answer0" value="E">E
-				<button type="button" class="submitbtn">Submit</button>
-			</form>
-			<br>
-			<iframe src="amc10/2021/A/12.html" width="80%" height="300px">
-					Sorry, your browser does not understand iframes
-			</iframe>
-			<form>
-				<label>Your answer: </label>
-				<input type="radio" name="answer1" value="A" checked>A
-				<input type="radio" name="answer1" value="B">B
-				<input type="radio" name="answer1" value="C">C
-				<input type="radio" name="answer1" value="D">D
-				<input type="radio" name="answer1" value="E">E
-				<button type="button" class="submitbtn">Submit</button>
-			</form>
-			<br>
+			<script>
+				getLevelsFromURL();
+				getProblems();
+				for(var i = 0; i < 5; i++) {
+					document.writeln('<h3 id="problemStatus">Unattempted</h3>');
+					document.writeln('<iframe src="' + problemURLS[i] + '" width = "80%" height="300px">');
+					document.writeln('\tSorry, your browser does not understand iframes');
+					document.writeln('</iframe>');
+					document.writeln('<form>');
+					document.writeln('\t<label>Your answer: </label>');
+					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="A" checked>A');
+					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="B" checked>B');
+					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="C" checked>C');
+					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="D" checked>D');
+					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="E" checked>E');
+					document.writeln('\t<button type="button" class="submitbtn">Submit</button>');
+					document.writeln('</form>');
+					document.writeln('<br>');
+				}
+			</script>
 		</center>
 	</div>
 </body>
