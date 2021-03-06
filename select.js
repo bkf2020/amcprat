@@ -3,6 +3,7 @@ var allLevels = ["Easy", "Medium", "Hard", "VeryHard"];
 var tests = [];
 var levels = new Map();
 var problemURLS = [];
+var visited = new Map();
 
 function reset() {
 	tests = [];
@@ -50,7 +51,6 @@ function getLevelsFromURL() {
 }
 
 function getProblems() {
-	var visited = new Map();
 	for(var i = 0; i < 5; i++) {
 		var problemURL = "";
 		var index = Math.floor(Math.random() * tests.length);
@@ -136,6 +136,7 @@ function getProblems() {
 			problem += ".html";
 			problemURL = test.toLowerCase() + "/" + year + "/" + problem;
 		}
+		visited.set(problemURL, true);
 		problemURLS.push(problemURL);
 	}
 }
