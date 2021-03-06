@@ -93,7 +93,7 @@ function getProblems() {
 		problem = problem.toString();				
 		if(problem.length === 1) problem = "0" + problem;
 		problem += ".html";
-		problemURL = test + "/" + year + "/" + problem;
+		problemURL = test.toLowerCase() + "/" + year + "/" + problem;
 						
 		// users may run out of problems, if the system remembers problems
 		while(getMapValue(visited, problemURL)) {
@@ -134,7 +134,7 @@ function getProblems() {
 			problem = problem.toString();				
 			if(problem.length === 1) problem = "0" + problem;
 			problem += ".html";
-			problemURL = test + "/" + year + "/" + problem;
+			problemURL = test.toLowerCase() + "/" + year + "/" + problem;
 		}
 		problemURLS.push(problemURL);
 	}
