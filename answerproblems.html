@@ -3,12 +3,13 @@
 <head>
 	<title>AMCPRAT: your practice problems</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="select.js"></script>
 </head>
-<body>
+<body onload="getProblems()">
 	<div class="header">
 		<h1>AMCPRAT: your practice problems</h1>
 	</div>
-	
+
 	<div class="wrapper">
 		<center>
 			<iframe src="amc10/2021/A/1.html" width="80%" height="300px">
@@ -16,12 +17,12 @@
 			</iframe>
 			<form>
 				<label>Your answer: </label>
-				<input type="radio" name="answer" value="A" checked>A
-				<input type="radio" name="answer" value="B">B
-				<input type="radio" name="answer" value="C">C
-				<input type="radio" name="answer" value="D">D
-				<input type="radio" name="answer" value="E">E
-				<button type="button" class="submitbtn">Submit</button> 
+				<input type="radio" name="answer0" value="A" checked>A
+				<input type="radio" name="answer0" value="B">B
+				<input type="radio" name="answer0" value="C">C
+				<input type="radio" name="answer0" value="D">D
+				<input type="radio" name="answer0" value="E">E
+				<button type="button" class="submitbtn">Submit</button>
 			</form>
 			<br>
 			<iframe src="amc10/2021/A/12.html" width="80%" height="300px">
@@ -29,16 +30,15 @@
 			</iframe>
 			<form>
 				<label>Your answer: </label>
-				<input type="radio" name="answer" value="A" checked>A
-				<input type="radio" name="answer" value="B">B
-				<input type="radio" name="answer" value="C">C
-				<input type="radio" name="answer" value="D">D
-				<input type="radio" name="answer" value="E">E
-				<button type="button" class="submitbtn">Submit</button> 
+				<input type="radio" name="answer1" value="A" checked>A
+				<input type="radio" name="answer1" value="B">B
+				<input type="radio" name="answer1" value="C">C
+				<input type="radio" name="answer1" value="D">D
+				<input type="radio" name="answer1" value="E">E
+				<button type="button" class="submitbtn">Submit</button>
 			</form>
 			<br>
 		</center>
 	</div>
 </body>
 </html>
-
