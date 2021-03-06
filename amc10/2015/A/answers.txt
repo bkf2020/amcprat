@@ -1,0 +1,25 @@
+C
+D
+D
+B
+E
+B
+B
+B
+D
+C
+C
+C
+C
+C
+B
+B
+D
+E
+D
+B (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)
+C
+A
+C
+B
+A
