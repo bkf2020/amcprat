@@ -21,13 +21,22 @@
 					document.writeln('\tSorry, your browser does not understand iframes');
 					document.writeln('</iframe>');
 					document.writeln('<form>');
-					document.writeln('\t<label>Your answer: </label>');
-					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="A" checked>A');
-					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="B" checked>B');
-					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="C" checked>C');
-					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="D" checked>D');
-					document.writeln('\t<input type="radio" name="answer"' + i.toString() + '" value="E" checked>E');
-					document.writeln('\t<button type="button" class="submitbtn">Submit</button>');
+					
+					currURLParts = problemURLS[i].split("/");
+					if(currURLParts[0] === "aime") {
+						document.writeln('\t<label>Your answer: </label>');
+						document.writeln('\t<input type="text" id="answer' + i.toString() + '">');
+						document.writeln('\t<button type="button" id="submitbtn' + i.toString() + '" class="submitbtn" name="aimesb">Submit</button>');
+					}
+					else {
+						document.writeln('\t<label>Your answer: </label>');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="A" checked>A');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="B" checked>B');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="C" checked>C');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="D" checked>D');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="E" checked>E');
+						document.writeln('\t<button type="button" id="submitbtn' + i.toString() + '" class="submitbtn" name="amcsb">Submit</button>');
+					}
 					document.writeln('</form>');
 					document.writeln('<br>');
 				}
