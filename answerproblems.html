@@ -4,6 +4,7 @@
 	<title>AMCPRAT: your practice problems</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="select.js"></script>
+	<script src="checker.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -30,11 +31,11 @@
 					}
 					else {
 						document.writeln('\t<label>Your answer: </label>');
-						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="A" checked>A');
-						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="B" checked>B');
-						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="C" checked>C');
-						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="D" checked>D');
-						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="E" checked>E');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="A" checked><label>A </label>');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="B"><label>B </label>');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="C"><label>C </label>');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="D"><label>D </label>');
+						document.writeln('\t<input type="radio" name="answer' + i.toString() + '" value="E"><label>E </label>');
 						document.writeln('\t<button type="button" id="submitbtn' + i.toString() + '" class="submitbtn" name="amcsb">Submit</button>');
 					}
 					document.writeln('</form>');

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
 body {
 	color: white;
 	font-weight: 400;
@@ -20,6 +19,12 @@ h3 {
 	font-weight: 400;
 	font-size: 30px;
 }
+h3.correct {
+	color: #42ff7b;
+}
+h3.wrong {
+	color: #ff1212;
+}
 b {
 	font-weight: 700;
 }
@@ -27,7 +32,7 @@ p {
 	font-weight: 400;
 }
 a:link {
-	color: #E69A8DFF;
+	color: #e69a8dff;
  	background-color: transparent;
   	text-decoration: none;
 }
@@ -56,7 +61,7 @@ button {
 	font-family: 'Open Sans', sans-serif;
 	margin: 4px 2px;
 	cursor: pointer;
-	background-color: #E69A8DFF;
+	background-color: #e69a8dff;
 }
 button.submitbtn {
 	font-size: 18px;
@@ -68,7 +73,7 @@ button.getproblems {
 .header {
 	margin: 0 auto;
 	max-width: 95%;
-	background-color: #E69A8DFF;
+	background-color: #e69a8dff;
 }
 .wrapper {
 	margin: 0 auto;

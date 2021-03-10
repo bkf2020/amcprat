@@ -1,0 +1,5 @@
+function getAnswer() {
+}
+function checkAnswer() {
+}
+

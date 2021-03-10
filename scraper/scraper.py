@@ -3,7 +3,7 @@ from shutil import copyfile
 import os
 import fileinput
 
-soup = BeautifulSoup(open("index.html"), 'html.parser')
+soup = BeautifulSoup(open("index.html", encoding='utf-8'), 'html.parser')
 
 def is_int(s):
 	try:
