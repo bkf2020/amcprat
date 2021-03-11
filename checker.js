@@ -45,11 +45,11 @@ function checkAnswer( qn ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
 				if(correctAnswer === userAnswer) {
-					document.getElementById("problemStatus" + qn).class = "correct";
+					document.getElementById("problemStatus" + qn).className = "correct";
 					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
 				}
 				else {
-					document.getElementById("problemStatus" + qn).class = "wrong";
+					document.getElementById("problemStatus" + qn).className = "wrong";
 					document.getElementById("problemStatus" + qn).innerText = "Wrong Answer!";
 				}
 			}
