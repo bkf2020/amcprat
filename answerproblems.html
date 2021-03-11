@@ -17,7 +17,7 @@
 				getLevelsFromURL();
 				getProblems();
 				for(var i = 0; i < 5; i++) {
-					document.writeln('<h3 id="problemStatus' + i.toString() + '">Unattempted</h3>');
+					document.writeln('<h3 id="problemStatus' + i.toString() + ' class="blank">Unattempted</h3>');
 					document.writeln('<iframe src="' + problemURLS[i] + '" width = "80%" height="300px">');
 					document.writeln('\tSorry, your browser does not understand iframes');
 					document.writeln('</iframe>');

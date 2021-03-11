@@ -19,6 +19,9 @@ h3 {
 	font-weight: 400;
 	font-size: 30px;
 }
+h3.blank {
+	color = white;
+}
 h3.correct {
 	color: #42ff7b;
 }
