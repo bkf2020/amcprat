@@ -36,15 +36,43 @@ function checkAnswer( qn ) {
 		problemNumber = parseInt(currentData[3].substr(0, 2), 10);
 	}
 	
-	var client = new XMLHttpRequest();
-	client.open('GET', answerURL);
-	client.onreadystatechange = function()
-	{
-		if( client.responseText != '' )
-		{
-			var txt = client.responseText.split("\n");
-			console.log(txt[problemNumber - 1]);
+	if(testType === "aime") {
+		userAnswer = parseInt(userAnswer, 10);
+		var client = new XMLHttpRequest();
+		client.open('GET', answerURL);
+		client.onreadystatechange = function() {
+			if( client.responseText != '' ) {
+				var txt = client.responseText.split("\n");
+				correctAnswer = parseInt(txt[problemNumber - 1], 10);
+				if(correctAnswer === userAnswer) {
+					document.getElementById("problemStatus" + qn).class = "correct";
+					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+				}
+				else {
+					document.getElementById("problemStatus" + qn).class = "wrong";
+					document.getElementById("problemStatus" + qn).innerText = "Wrong Answer!";
+				}
+			}
 		}
+		client.send();
 	}
-	client.send();
+	else {
+		var client = new XMLHttpRequest();
+		client.open('GET', answerURL);
+		client.onreadystatechange = function() {
+			if( client.responseText != '' ) {
+				var txt = client.responseText.split("\n");
+				correctAnswer = txt[problemNumber - 1];
+				if(correctAnswer === userAnswer) {
+					document.getElementById("problemStatus" + qn).class = "correct";
+					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+				}
+				else {
+					document.getElementById("problemStatus" + qn).class = "wrong";
+					document.getElementById("problemStatus" + qn).innerText = "Wrong Answer!";
+				}
+			}
+		}
+		client.send();
+	}
 }
