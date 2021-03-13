@@ -50,12 +50,9 @@ function checkAnswer( qn ) {
 					var submitButton = document.getElementById("submitbtn" + qn);
 					var label = document.getElementById("yourAnswer" + qn);
 					var textBox = document.getElementById("answer" + qn);
-					console.log(submitButton);
-					console.log(label);
-					console.log(textBox);
-					console.log(label.parentNode.removeChild(label));
-					console.log(textBox.parentNode.removeChild(textBox));
-					console.log(submitButton.parentNode.removeChild(submitButton));
+					label.parentNode.removeChild(label);
+					textBox.parentNode.removeChild(textBox);
+					submitButton.parentNode.removeChild(submitButton);
 				}
 				else {
 					document.getElementById("problemStatus" + qn).className = "wrong";
@@ -75,6 +72,9 @@ function checkAnswer( qn ) {
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
 					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+					label.parentNode.removeChild(label);
+					textBox.parentNode.removeChild(textBox);
+					submitButton.parentNode.removeChild(submitButton);
 				}
 				else {
 					document.getElementById("problemStatus" + qn).className = "wrong";
