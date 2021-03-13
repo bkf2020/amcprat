@@ -50,9 +50,9 @@ function checkAnswer( qn ) {
 					var submitButton = document.getElementById("submitbtn" + qn);
 					var label = document.getElementById("yourAnswer" + qn);
 					var textBox = document.getElementById("answer" + qn);
-					label.remove();
-					textBox.remove();
-					submitButton.remove();
+					console.log(label.parentNode.removeChild(label));
+					console.log(textBox.parentNode.removeChild(textBox));
+					console.log(submitButton.parentNode.removeChild(submitButton));
 				}
 				else {
 					document.getElementById("problemStatus" + qn).className = "wrong";
