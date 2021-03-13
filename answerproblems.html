@@ -25,7 +25,7 @@
 					
 					currURLParts = problemURLS[i].split("/");
 					if(currURLParts[0] === "aime") {
-						document.writeln('\t<label>Your answer: </label>');
+						document.writeln('\t<label id="yourAnswer' + i.toString() + '">Your answer: </label>');
 						document.writeln('\t<input type="text" id="answer' + i.toString() + '" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">');
 						document.writeln('\t<button type="button" id="submitbtn' + i.toString() + '" class="submitbtn" name="aimesb" onclick="checkAnswer(' + i.toString() + ')">Submit</button>');
 					}

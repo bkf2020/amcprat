@@ -47,6 +47,12 @@ function checkAnswer( qn ) {
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
 					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+					var submitButton = document.getElementById("submitbtn" + qn);
+					var label = document.getElementById("yourAnswer" + qn);
+					var textBox = document.getElementById("answer" + qn);
+					submitButton.parentNode.removeChild(parentNode);
+					label.parentNode.removeChild(label);
+					textBox.parentNode.removeChild(textBox);
 				}
 				else {
 					document.getElementById("problemStatus" + qn).className = "wrong";
