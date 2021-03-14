@@ -40,13 +40,15 @@ function getLevelsFromURL() {
 
 	for(var i = 0; i < testsAndLevels.length; i++) {
 		var currentLevelsWithTest = testsAndLevels[i].split("&");
-		tests.push(currentLevelsWithTest[0]);
 						
 		var currentLevels = [];
 		for(var j = 1; j < currentLevelsWithTest.length; j++) {
 			currentLevels.push(currentLevelsWithTest[j]);
 		}
-		levels.set(tests[i], currentLevels);
+		if(currentLevels.length > 0) {
+			levels.set(currentLevelsWithTest[0], currentLevels);
+			tests.push(currentLevelsWithTest[0]);
+		}
 	}
 }
 
