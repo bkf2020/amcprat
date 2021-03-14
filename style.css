@@ -129,7 +129,7 @@ main {
 }
 
 main.indexGrid {
-	max-width: 2000px;
+	max-width: 1200px;
 	grid-template-columns: repeat(auto-fit, 500px);
 	align-items: center;
 	grid-gap: 50px;
