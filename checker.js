@@ -18,6 +18,7 @@ function checkAnswer( qn ) {
 	var currentData = problemURLS[qn].split("/");
 	var testType = currentData[0];
 	var answerURL = "";
+	var solutionsURL = "https://artofproblemsolving.com/wiki/index.php/";
 	var problemNumber = 0;
 	if(testType === "amc8") {
 		for(var i = 0; i < 2; i++) {
@@ -46,7 +47,7 @@ function checkAnswer( qn ) {
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+					document.getElementById("problemStatus" + qn).innerHTML = "Correct Answer! <a>View Solution on AoPS Wiki</a>";
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
@@ -67,7 +68,7 @@ function checkAnswer( qn ) {
 				correctAnswer = txt[problemNumber - 1];
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerText = "Correct Answer!";
+					document.getElementById("problemStatus" + qn).innerHTML = "Correct Answer! <a>View Solution on AoPS Wiki</a>";
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
