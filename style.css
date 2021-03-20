@@ -55,12 +55,12 @@ a:active {
   	text-decoration: underline;
 }
 a:link.sol {
-	color: #fccd32;
+	color: #f98a40;
 }
 a:hover.sol {
 	color: #f0cb51;
 }
-a:hover.active {
+a:active.sol {
 	color: yellow;
 }
 a:link.button {
