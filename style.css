@@ -57,8 +57,11 @@ a:active {
 a:link.sol {
 	color: #fccd32;
 }
-a:link.sol:hover {
+a:hover.sol {
 	color: #f0cb51;
+}
+a:active {
+	color: yellow;
 }
 a:link.button {
 	border: none;
@@ -73,7 +76,7 @@ a:link.button {
 	cursor: pointer;
 	background-color: #e69a8dff;
 }
-a:link.button:hover {
+a:hover.button {
 	background-color: lightCoral;
 }
 a:link.clearButton {
@@ -81,7 +84,7 @@ a:link.clearButton {
 	background-color: transparent;
 	padding: 10px 20px;
 }
-a:link.clearButton:hover {
+a:hover.clearButton {
 	background-color: hsla(240, 50%, 80%, 0.5);
 }
 button {
