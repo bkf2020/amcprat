@@ -67,9 +67,13 @@ a:link.button {
 	cursor: pointer;
 	background-color: #e69a8dff;
 }
+a:link.button:hover {
+	background-color: lightCoral;
+}
 a:link.clearButton {
 	border: 3px solid white;
 	background-color: transparent;
+	padding: 10px 20px;
 }
 a:link.clearButton:hover {
 	background-color: hsla(240, 50%, 80%, 0.5);
@@ -115,11 +119,17 @@ button.getproblems {
 .goals {
 	background-image: url("images/spacex.jpg");
 	min-height: 400px;
-	max-width: 1000px;
 	background-size: cover;
 	text-shadow: 1px 1px 5px black;
 }
-
+.smaller {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.dont-break {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
 input.largercheckbox {
 	transform : scale(1.5);
 }
@@ -130,11 +140,4 @@ main {
 	justify-content: center;
 	grid-template-columns: repeat(auto-fit, 450px);
 	grid-gap: 0px;
-}
-
-main.indexGrid {
-	max-width: 1200px;
-	grid-template-columns: repeat(auto-fit, 500px);
-	align-items: center;
-	grid-gap: 50px;
 }
