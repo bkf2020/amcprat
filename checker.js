@@ -21,6 +21,8 @@ function checkAnswer( qn ) {
 	var solutionsURL = "https://artofproblemsolving.com/wiki/index.php/";
 	var problemNumber = 0;
 	if(testType === "amc8") {
+		solutionsURL += currentData[1];
+		solutionsURL += "_AMC_8_Problems/Problem_";
 		for(var i = 0; i < 2; i++) {
 			answerURL += currentData[i];
 			answerURL += "/";
@@ -29,6 +31,10 @@ function checkAnswer( qn ) {
 		problemNumber = parseInt(currentData[2].substr(0, 2), 10);
 	}
 	else {
+		solutionsURL += currentData[1];
+		if(testType === "aime") solutionsURL += "_AIME_" + currentData[2] + "_Problems/Problem_";
+		else if(testType === "amc10") solutionsURL += "_AMC_10" + currentData[2] + "_Problems/Problem_";
+		else solutionsURL += "_AMC_12" + currentData[2] + "_Problems/Problem_";
 		for(var i = 0; i < 3; i++) {
 			answerURL += currentData[i];
 			answerURL += "/";
@@ -36,6 +42,7 @@ function checkAnswer( qn ) {
 		answerURL += "answers.txt";
 		problemNumber = parseInt(currentData[3].substr(0, 2), 10);
 	}
+	solutionsURL += problemNumber.toString();
 	
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
@@ -47,7 +54,7 @@ function checkAnswer( qn ) {
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = "Correct Answer! <a>View Solution on AoPS Wiki</a>";
+					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + answerURL + '" class="sol">View Solution on AoPS Wiki</a>';
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
@@ -68,7 +75,7 @@ function checkAnswer( qn ) {
 				correctAnswer = txt[problemNumber - 1];
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = "Correct Answer! <a>View Solution on AoPS Wiki</a>";
+					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + answerURL + '" class="sol">View Solution on AoPS Wiki</a>';
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}

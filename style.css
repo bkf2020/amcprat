@@ -54,6 +54,9 @@ a:active {
   	background-color: transparent;
   	text-decoration: underline;
 }
+a:link.sol {
+	color: #d6aa19;
+}
 a:link.button {
 	border: none;
 	color: white;
