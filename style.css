@@ -55,7 +55,10 @@ a:active {
   	text-decoration: underline;
 }
 a:link.sol {
-	color: #d6aa19;
+	color: #fccd32;
+}
+a:link.sol:hover {
+	color: #f0cb51;
 }
 a:link.button {
 	border: none;

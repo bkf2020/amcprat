@@ -54,7 +54,7 @@ function checkAnswer( qn ) {
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol">View Solution on AoPS Wiki</a>';
+					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
@@ -75,7 +75,7 @@ function checkAnswer( qn ) {
 				correctAnswer = txt[problemNumber - 1];
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol">View Solution on AoPS Wiki</a>';
+					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
 					var submitForm = document.getElementById("submitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
