@@ -60,7 +60,7 @@ a:link.sol {
 a:hover.sol {
 	color: #f0cb51;
 }
-a:active {
+a:hover.active {
 	color: yellow;
 }
 a:link.button {
