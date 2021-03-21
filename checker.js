@@ -1,7 +1,9 @@
 function getCheckedValue( radioName ){
-    var radios = document.getElementsByName( radioName ); // Get radio group by-name
+	// Get radio group by-name
+    var radios = document.getElementsByName( radioName );
     for(var y=0; y<radios.length; y++)
-		if(radios[y].checked) return radios[y].value; // return the checked value
+		// return the checked value
+		if(radios[y].checked) return radios[y].value;
 }
 
 function getAnswer( qn ) {
@@ -32,9 +34,15 @@ function checkAnswer( qn ) {
 	}
 	else {
 		solutionsURL += currentData[1];
-		if(testType === "aime") solutionsURL += "_AIME_" + currentData[2] + "_Problems/Problem_";
-		else if(testType === "amc10") solutionsURL += "_AMC_10" + currentData[2] + "_Problems/Problem_";
-		else solutionsURL += "_AMC_12" + currentData[2] + "_Problems/Problem_";
+		if(testType === "aime") {
+			solutionsURL += "_AIME_" + currentData[2] + "_Problems/Problem_";
+		}
+		else if(testType === "amc10") {
+			solutionsURL += "_AMC_10" + currentData[2] + "_Problems/Problem_";
+		}
+		else {
+			solutionsURL += "_AMC_12" + currentData[2] + "_Problems/Problem_";
+		}
 		for(var i = 0; i < 3; i++) {
 			answerURL += currentData[i];
 			answerURL += "/";
@@ -55,7 +63,7 @@ function checkAnswer( qn ) {
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
 					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
-					var submitForm = document.getElementById("submitForm" + qn);
+					var submitForm = document.getElementById("aimeSubmitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
 				else {
@@ -76,7 +84,7 @@ function checkAnswer( qn ) {
 				if(correctAnswer === userAnswer) {
 					document.getElementById("problemStatus" + qn).className = "correct";
 					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
-					var submitForm = document.getElementById("submitForm" + qn);
+					var submitForm = document.getElementById("amcSubmitForm" + qn);
 					submitForm.parentNode.removeChild(submitForm);
 				}
 				else {

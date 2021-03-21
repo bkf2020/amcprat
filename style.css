@@ -26,7 +26,7 @@ h3.correct {
 	color: #42ff7b;
 }
 h3.wrong {
-	color: #ff1212;
+	color: #f7474a;
 }
 b {
 	font-weight: 700;
@@ -139,10 +139,15 @@ button.getproblems {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
+.hidden {
+	display: none;
+}
 input.largercheckbox {
 	transform : scale(1.5);
 }
-
+iframe {
+	max-width: 1344px;
+}
 main {
 	display: grid;
 	max-width: 900px;
