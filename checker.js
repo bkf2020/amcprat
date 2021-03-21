@@ -56,10 +56,7 @@ function checkAnswer( qn ) {
 	}
 	solutionsURL += problemNumber.toString();
 	
-	var statusText =
-		document.getElementById("problemStatus" + qn).className;
-	console.log(statusText);
-	
+	var statusText = document.getElementById("problemStatus" + qn);
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
 		var client = new XMLHttpRequest();
