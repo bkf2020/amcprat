@@ -56,6 +56,7 @@ function checkAnswer( qn ) {
 	}
 	solutionsURL += problemNumber.toString();
 	
+	console.log(testType);
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
 		var client = new XMLHttpRequest();
@@ -66,6 +67,8 @@ function checkAnswer( qn ) {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
+				console.log(correctAnswer);
+				console.log(userAnswer);
 				if(correctAnswer === userAnswer) {
 					statusText.className = "correct";
 					
@@ -98,6 +101,8 @@ function checkAnswer( qn ) {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = txt[problemNumber - 1];
+				console.log(correctAnswer);
+				console.log(userAnswer);
 				if(correctAnswer === userAnswer) {
 					statusText.className = "correct";
 					
