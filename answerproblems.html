@@ -179,15 +179,13 @@
 					
 					currURLParts = problemURLS[i].split("/");
 					if(currURLParts[0] === "aime") {
-						var submitForm = document.getElementById(
-											"aimeSubmitForm" +
-											i.toString());
+						var asf = "aimeSubmitForm" + i.toString();
+						var submitForm = document.getElementById(asf);
 						submitForm.className = "";
 					}
 					else {
-						var submitForm = document.getElementById(
-											"amcSubmitForm" +
-											i.toString());
+						var asf = "amcSubmitForm" + i.toString();
+						var submitForm = document.getElementById(asf);
 						submitForm.className = "";
 					}
 				}
