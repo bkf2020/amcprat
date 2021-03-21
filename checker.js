@@ -56,19 +56,18 @@ function checkAnswer( qn ) {
 	}
 	solutionsURL += problemNumber.toString();
 	
-	console.log(testType);
+	var statusText =
+		document.getElementById("problemStatus" + qn).className;
+	console.log(statusText);
+	
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
 		var client = new XMLHttpRequest();
-		var statusText =
-			document.getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
-				console.log(correctAnswer);
-				console.log(userAnswer);
 				if(correctAnswer === userAnswer) {
 					statusText.className = "correct";
 					
@@ -94,15 +93,11 @@ function checkAnswer( qn ) {
 	}
 	else {
 		var client = new XMLHttpRequest();
-		var statusText =
-			document.getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = txt[problemNumber - 1];
-				console.log(correctAnswer);
-				console.log(userAnswer);
 				if(correctAnswer === userAnswer) {
 					statusText.className = "correct";
 					
