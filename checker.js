@@ -55,20 +55,29 @@ function checkAnswer( qn ) {
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
 		var client = new XMLHttpRequest();
+		var statusText = getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = parseInt(txt[problemNumber - 1], 10);
 				if(correctAnswer === userAnswer) {
-					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
+					statusText.className = "correct";
+					
+					var correctAnswerPlusSolution =
+					'Correct Answer! <a href="' + solutionsURL +
+					'" class="sol" target="_blank" rel="noopener' +
+					'noreferrer">View Solution on AoPS Wiki</a>';
+					statusText.innerHTML = correctAnswerPlusSolution;
+					
 					var submitForm = document.getElementById("aimeSubmitForm" + qn);
-					submitForm.parentNode.removeChild(submitForm);
+					if(submitForm != null) {
+						submitForm.parentNode.removeChild(submitForm);
+					}
 				}
 				else {
-					document.getElementById("problemStatus" + qn).className = "wrong";
-					document.getElementById("problemStatus" + qn).innerText = "Wrong Answer!";
+					statusText.className = "wrong";
+					statusText.innerText = "Wrong Answer!";
 				}
 			}
 		}
@@ -76,20 +85,29 @@ function checkAnswer( qn ) {
 	}
 	else {
 		var client = new XMLHttpRequest();
+		var statusText = getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
 				correctAnswer = txt[problemNumber - 1];
 				if(correctAnswer === userAnswer) {
-					document.getElementById("problemStatus" + qn).className = "correct";
-					document.getElementById("problemStatus" + qn).innerHTML = 'Correct Answer! <a href="' + solutionsURL + '" class="sol" target="_blank" rel="noopener noreferrer">View Solution on AoPS Wiki</a>';
+					statusText.className = "correct";
+					
+					var correctAnswerPlusSolution =
+					'Correct Answer! <a href="' + solutionsURL +
+					'" class="sol" target="_blank" rel="noopener' +
+					'noreferrer">View Solution on AoPS Wiki</a>';
+					statusText.innerHTML = correctAnswerPlusSolution;
+					
 					var submitForm = document.getElementById("amcSubmitForm" + qn);
-					submitForm.parentNode.removeChild(submitForm);
+					if(submitForm != null) {
+						submitForm.parentNode.removeChild(submitForm);
+					}
 				}
 				else {
-					document.getElementById("problemStatus" + qn).className = "wrong";
-					document.getElementById("problemStatus" + qn).innerText = "Wrong Answer!";
+					statusText.className = "wrong";
+					statusText.innerText = "Wrong Answer!";
 				}
 			}
 		}
