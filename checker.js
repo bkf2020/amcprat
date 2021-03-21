@@ -7,14 +7,16 @@ function getCheckedValue( radioName ){
 }
 
 function getAnswer( qn ) {
-	btnType = document.getElementById("submitbtn" + qn).name;
-	if(btnType === "amcsb") {
-		return getCheckedValue("answer" + qn);
+	testType = problemURLS[qn].split("/")[0];
+	if(testType === "aime") {
+		return document.getElementById("aimeAnswer" + qn).value;
+		
 	}
-	else { // aimesb
-		return document.getElementById("answer" + qn).value;
+	else {
+		return getCheckedValue("amcAnswer" + qn);
 	}
 }
+var ua, ca;
 function checkAnswer( qn ) {
 	var userAnswer = getAnswer( qn );
 	var currentData = problemURLS[qn].split("/");
@@ -94,7 +96,16 @@ function checkAnswer( qn ) {
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
 				var txt = client.responseText.split("\n");
-				correctAnswer = txt[problemNumber - 1];
+				correctAnswerTemp = txt[problemNumber - 1];
+				var correctAnswer = "";
+				for(var i = 0; i < correctAnswerTemp.length; i++) {
+					if(!(correctAnswerTemp[i] == '\n'
+						 || correctAnswerTemp[i] == '\r')) {
+							correctAnswer += correctAnswerTemp[i];
+					}
+				}
+				ca = correctAnswer;
+				ua = userAnswer;
 				if(correctAnswer === userAnswer) {
 					statusText.className = "correct";
 					
