@@ -1,7 +1,7 @@
 function getCheckedValue( radioName ){
 	// Get radio group by-name
     var radios = document.getElementsByName( radioName );
-    for(var y=0; y<radios.length; y++)
+    for(var y = 0; y < radios.length; y++)
 		// return the checked value
 		if(radios[y].checked) return radios[y].value;
 }
@@ -20,7 +20,8 @@ function checkAnswer( qn ) {
 	var currentData = problemURLS[qn].split("/");
 	var testType = currentData[0];
 	var answerURL = "";
-	var solutionsURL = "https://artofproblemsolving.com/wiki/index.php/";
+	var solutionsURL =
+		"https://artofproblemsolving.com/wiki/index.php/";
 	var problemNumber = 0;
 	if(testType === "amc8") {
 		solutionsURL += currentData[1];
@@ -35,13 +36,16 @@ function checkAnswer( qn ) {
 	else {
 		solutionsURL += currentData[1];
 		if(testType === "aime") {
-			solutionsURL += "_AIME_" + currentData[2] + "_Problems/Problem_";
+			solutionsURL +=
+				"_AIME_" + currentData[2] + "_Problems/Problem_";
 		}
 		else if(testType === "amc10") {
-			solutionsURL += "_AMC_10" + currentData[2] + "_Problems/Problem_";
+			solutionsURL +=
+				"_AMC_10" + currentData[2] + "_Problems/Problem_";
 		}
 		else {
-			solutionsURL += "_AMC_12" + currentData[2] + "_Problems/Problem_";
+			solutionsURL +=
+				"_AMC_12" + currentData[2] + "_Problems/Problem_";
 		}
 		for(var i = 0; i < 3; i++) {
 			answerURL += currentData[i];
@@ -55,7 +59,8 @@ function checkAnswer( qn ) {
 	if(testType === "aime") {
 		userAnswer = parseInt(userAnswer, 10);
 		var client = new XMLHttpRequest();
-		var statusText = getElementById("problemStatus" + qn).className;
+		var statusText =
+			document.getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
@@ -70,7 +75,8 @@ function checkAnswer( qn ) {
 					'noreferrer">View Solution on AoPS Wiki</a>';
 					statusText.innerHTML = correctAnswerPlusSolution;
 					
-					var submitForm = document.getElementById("aimeSubmitForm" + qn);
+					var submitForm =
+						document.getElementById("aimeSubmitForm" + qn);
 					if(submitForm != null) {
 						submitForm.parentNode.removeChild(submitForm);
 					}
@@ -85,7 +91,8 @@ function checkAnswer( qn ) {
 	}
 	else {
 		var client = new XMLHttpRequest();
-		var statusText = getElementById("problemStatus" + qn).className;
+		var statusText =
+			document.getElementById("problemStatus" + qn).className;
 		client.open('GET', answerURL);
 		client.onreadystatechange = function() {
 			if( client.responseText != '' ) {
@@ -100,7 +107,8 @@ function checkAnswer( qn ) {
 					'noreferrer">View Solution on AoPS Wiki</a>';
 					statusText.innerHTML = correctAnswerPlusSolution;
 					
-					var submitForm = document.getElementById("amcSubmitForm" + qn);
+					var submitForm =
+						document.getElementById("amcSubmitForm" + qn);
 					if(submitForm != null) {
 						submitForm.parentNode.removeChild(submitForm);
 					}
