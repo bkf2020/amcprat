@@ -122,7 +122,7 @@ function getProblems() {
 				else if(diff === "VeryHard") problem = Math.floor(Math.random() * 3) + 23;
 			}
 			else {
-				year = Math.floor(Math.random() * 6) + 2015;
+				year = Math.floor(Math.random() * 7) + 2015;
 				year = year.toString();
 				if(Math.floor(Math.random() * 2) === 0) year += "/A";
 				else year += "/B";
