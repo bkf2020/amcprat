@@ -101,7 +101,7 @@ function getProblems() {
 		while(getMapValue(visited, problemURL)) {
 			visited.set(problemURL, true);
 			if(test === "AIME") {
-				year = Math.floor(Math.random() * 5) + 2015;
+				year = Math.floor(Math.random() * 7) + 2015;
 				year = year.toString();
 				if(Math.floor(Math.random() * 2) === 0) year += "/I";
 				else year += "/II";
