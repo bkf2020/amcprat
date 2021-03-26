@@ -97,6 +97,10 @@ button {
 button:hover {
 	background-color: lightCoral;
 }
+input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
 .submitbtn {
 	border: none;
 	color: white;
@@ -110,6 +114,9 @@ button:hover {
 	background-color: #e69a8dff;
 	font-size: 18px;
 	padding: 10px 25px;
+}
+.submitbtn:hover {
+	background-color: lightCoral;
 }
 button.getproblems {
 	font-size: 28px;
