@@ -14,20 +14,24 @@
 
 	<div class="wrapper">
 		<center>
+			<iframe name="hiddenFrame" width="0" height="0" border="0"
+			style="display: none;"></iframe>
+			
 			<h3 id="problemStatus0" class="blank">
 				Unattempted
 			</h3>
 			<iframe id="iframe0" src="" width="100%" height="300px">
 					Sorry, your browser does not understand iframes
 			</iframe>
-			<div id="aimeSubmitForm0" class="hidden">
+			<form id="aimeSubmitForm0" class="hidden" action=""
+			onsubmit="checkAnswer(0)" method="post"
+			target="hiddenFrame">
 				<label>Your answer: </label>
 				<input type="text" id="aimeAnswer0" maxlength="3"
 				onkeypress="return event.charCode >= 48 &&
 				event.charCode <= 57">
-				<button type="button" id="submitbtn0" class="submitbtn"
-				name="aimesb" onclick="checkAnswer(0)">Submit</button>
-			</div>
+				<input type="submit" value="Submit" class="submitbtn">
+			</form>
 			<div id="amcSubmitForm0" class="hidden">
 				<label>Your answer: </label>
 				<input type="radio" name="amcAnswer0" value="A" checked>
@@ -50,14 +54,15 @@
 			<iframe id="iframe1" src="" width="100%" height="300px">
 					Sorry, your browser does not understand iframes
 			</iframe>
-			<div id="aimeSubmitForm1" class="hidden">
+			<form id="aimeSubmitForm1" class="hidden" action=""
+			onsubmit="checkAnswer(1)" method="post"
+			target="hiddenFrame">
 				<label>Your answer: </label>
 				<input type="text" id="aimeAnswer1" maxlength="3"
 				onkeypress="return event.charCode >= 48 &&
 				event.charCode <= 57">
-				<button type="button" id="submitbtn1" class="submitbtn"
-				name="aimesb" onclick="checkAnswer(1)">Submit</button>
-			</div>
+				<input type="submit" value="Submit" class="submitbtn">
+			</form>
 			<div id="amcSubmitForm1" class="hidden">
 				<label>Your answer: </label>
 				<input type="radio" name="amcAnswer1" value="A" checked>
@@ -80,14 +85,15 @@
 			<iframe id="iframe2" src="" width="100%" height="300px">
 					Sorry, your browser does not understand iframes
 			</iframe>
-			<div id="aimeSubmitForm2" class="hidden">
+			<form id="aimeSubmitForm2" class="hidden" action=""
+			onsubmit="checkAnswer(2)" method="post"
+			target="hiddenFrame">
 				<label>Your answer: </label>
 				<input type="text" id="aimeAnswer2" maxlength="3"
 				onkeypress="return event.charCode >= 48 &&
 				event.charCode <= 57">
-				<button type="button" id="submitbtn2" class="submitbtn"
-				name="aimesb" onclick="checkAnswer(2)">Submit</button>
-			</div>
+				<input type="submit" value="Submit" class="submitbtn">
+			</form>
 			<div id="amcSubmitForm2" class="hidden">
 				<label>Your answer: </label>
 				<input type="radio" name="amcAnswer2" value="A" checked>
@@ -110,14 +116,15 @@
 			<iframe id="iframe3" src="" width="100%" height="300px">
 					Sorry, your browser does not understand iframes
 			</iframe>
-			<div id="aimeSubmitForm3" class="hidden">
+			<form id="aimeSubmitForm3" class="hidden" action=""
+			onsubmit="checkAnswer(3)" method="post"
+			target="hiddenFrame">
 				<label>Your answer: </label>
 				<input type="text" id="aimeAnswer3" maxlength="3"
 				onkeypress="return event.charCode >= 48 &&
 				event.charCode <= 57">
-				<button type="button" id="submitbtn3" class="submitbtn"
-				name="aimesb" onclick="checkAnswer(3)">Submit</button>
-			</div>
+				<input type="submit" value="Submit" class="submitbtn">
+			</form>
 			<div id="amcSubmitForm3" class="hidden">
 				<label>Your answer: </label>
 				<input type="radio" name="amcAnswer3" value="A" checked>
@@ -140,14 +147,15 @@
 			<iframe id="iframe4" src="" width="100%" height="300px">
 					Sorry, your browser does not understand iframes
 			</iframe>
-			<div id="aimeSubmitForm4" class="hidden">
+			<form id="aimeSubmitForm4" class="hidden" action=""
+			onsubmit="checkAnswer(4)" method="post"
+			target="hiddenFrame">
 				<label>Your answer: </label>
 				<input type="text" id="aimeAnswer4" maxlength="3"
 				onkeypress="return event.charCode >= 48 &&
 				event.charCode <= 57">
-				<button type="button" id="submitbtn4" class="submitbtn"
-				name="aimesb" onclick="checkAnswer(4)">Submit</button>
-			</div>
+				<input type="submit" value="Submit" class="submitbtn">
+			</form>
 			<div id="amcSubmitForm4" class="hidden">
 				<label>Your answer: </label>
 				<input type="radio" name="amcAnswer4" value="A" checked>
