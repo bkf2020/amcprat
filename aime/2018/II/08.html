@@ -1,1 +1,53 @@
-<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2018 AIME II Problem 8</span> <a href="08.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">A frog is positioned at the origin in the coordinate plane. From the point <span style="white-space:pre;"><img alt="$(x,y)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/e/5/3/e53b1fe25be1c679117fb44a6a886fe1247d189a.png" style="vertical-align: -4px" width="40"/>,</span> the frog can jump to any of the points <img alt="$(x+1, y), (x+2, y), (x, y+1),$" class="latex" height="18" src="https://latex.artofproblemsolving.com/6/d/4/6d43c56d30adfeee56f2f355517088eb3f3619c2.png" style="vertical-align: -4px" width="240"/> or <span style="white-space:pre;"><img alt="$(x, y+2)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/d/5/8/d584a87b9e1f963a27608e5cfcebec17148aa098.png" style="vertical-align: -4px" width="72"/>.</span> Find the number of distinct sequences of jumps in which the frog begins at <img alt="$(0,0)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/f/9/6/f9603ca3089464e548fc6f1366bc474e7efef8d9.png" style="vertical-align: -4px" width="38"/> and ends at <span style="white-space:pre;"><img alt="$(4,4)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/9/e/7/9e74a8a996f28bdc445eb3beaf3c3f14594eac27.png" style="vertical-align: -4px" width="38"/>.</span></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylebutwhite.css">
+</head>
+<body>
+	<h2><span>2018 AIME II Problem 8</span> <a href="08.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2>
+<div class="cmty-view-post-item-text">Octagon <img alt="$ABCDEFGH$" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/5/5/055dcba798b1424c44c2606d913e0f2edab1c5ad.png" width="118"/> with side lengths <img alt="$AB = CD = EF = GH = 10$" class="latex" height="13" src="https://latex.artofproblemsolving.com/b/f/4/bf466ffd3801271484eeba590365adaf4262f3da.png" style="vertical-align: 0px" width="232"/> and <img alt="$BC=  DE = FG = HA = 11$" class="latex" height="13" src="https://latex.artofproblemsolving.com/a/0/a/a0a4992b68978168b2ff10455993294eea667e29.png" style="vertical-align: 0px" width="231"/> is formed by removing four <img alt="$6-8-10$" class="latex" height="13" src="https://latex.artofproblemsolving.com/2/b/d/2bde8abf0963fc7babf87ebe99a2c7ab348bb866.png" style="vertical-align: 0px" width="80"/> triangles from the corners of a <img alt="$23\times 27$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/8/b/e8ba88cfd695d62dbc2ecd057a39e430a04fb56a.png" width="58"/> rectangle with side <img alt="$\overline{AH}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/5/6/0/5605e7674254425ca5932c0a752f8a04b6b16770.png" width="30"/> on a short side of the rectangle, as shown. Let <img alt="$J$" class="latex" height="12" src="https://latex.artofproblemsolving.com/a/b/b/abb5588023cfa1ac14643e9778699f03eecc57a3.png" width="12"/> be the midpoint of <span style="white-space:pre;"><img alt="$\overline{HA}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/2/1/f/21fe69b214d037ee0f3c3d983dc942c4411599eb.png" width="30"/>,</span> and partition the octagon into <img alt="$7$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" width="9"/> triangles by drawing segments <span style="white-space:pre;"><img alt="$\overline{JB}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/e/b/7/eb725621769b8b37a6a60d7e8cd647e8a111b425.png" width="27"/>,</span> <span style="white-space:pre;"><img alt="$\overline{JC}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/1/7/d/17d44aaec6d28b7d5886e39366d1d9357fe937c3.png" width="26"/>,</span> <span style="white-space:pre;"><img alt="$\overline{JD}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/4/8/f/48fd45cdf78e0542c17a3ddf6871459bfac4e27f.png" width="27"/>,</span> <span style="white-space:pre;"><img alt="$\overline{JE}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/a/f/0/af0d24b907c6febb5b90faabbd0dbaeb6041e69f.png" width="26"/>,</span> <span style="white-space:pre;"><img alt="$\overline{JF}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/5/6/a/56a58bb9b1e10818396570b2762f661a3725028c.png" width="26"/>,</span> and <span style="white-space:pre;"><img alt="$\overline{JG}$" class="latex" height="15" src="https://latex.artofproblemsolving.com/1/d/8/1d81b778defe4b11be7450bbe9e196f711759e5c.png" width="26"/>.</span> Find the area of the convex polygon whose vertices are the centroids of these <img alt="$7$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" width="9"/> triangles.<br/>
+<br/>
+<img alt='[asy]
+unitsize(6);
+pair P = (0, 0), Q = (0, 23), R = (27, 23), SS = (27, 0);
+pair A = (0, 6), B = (8, 0), C = (19, 0), D = (27, 6), EE = (27, 17), F = (19, 23),  G = (8, 23), J = (0, 23/2), H = (0, 17);
+draw(P--Q--R--SS--cycle);
+draw(J--B);
+draw(J--C);
+draw(J--D);
+draw(J--EE);
+draw(J--F);
+draw(J--G);
+draw(A--B);
+draw(H--G);
+real dark = 0.6;
+filldraw(A--B--P--cycle, gray(dark));
+filldraw(H--G--Q--cycle, gray(dark));
+filldraw(F--EE--R--cycle, gray(dark));
+filldraw(D--C--SS--cycle, gray(dark));
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(EE);
+dot(F);
+dot(G);
+dot(H);
+dot(J);
+dot(H);
+defaultpen(fontsize(10pt));
+real r = 1.3;
+label("$A$", A, W*r);
+label("$B$", B, S*r);
+label("$C$", C, S*r);
+label("$D$", D, E*r);
+label("$E$", EE, E*r);
+label("$F$", F, N*r);
+label("$G$", G, N*r);
+label("$H$", H, W*r);
+label("$J$", J, W*r);
+[/asy]' class="asy-image" height="272" src="https://latex.artofproblemsolving.com/9/5/8/958670038ab1dd52c3b3fb6095f47bd59ee398d1.png" width="318"/></div></body>
+</html>
