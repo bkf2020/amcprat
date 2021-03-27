@@ -9,15 +9,15 @@ body {
 }
 h1 {
 	font-weight: 400;
-	font-size: 50px;
+	font-size: 2.0833333333333335em;
 }
 h2 {
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 1.6666666666666667em;
 }
 h3 {
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 1.25em;
 }
 h3.blank {
 	color: white;
@@ -35,7 +35,7 @@ p {
 	font-weight: 400;
 }
 a:link {
-	color: #e69a8dff;
+	color: #e68d9d;
  	background-color: transparent;
   	text-decoration: underline;
 }
@@ -61,23 +61,23 @@ a:active.sol {
 a:link.button {
 	border: none;
 	color: white;
-	padding: 15px 32px;
-	font-size: 30px;
+	padding: 0.625em 1.3333333333333333em;
+	font-size: 1.25em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
-	margin: 4px 2px;
+	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e69a8dff;
+	background-color: #e68d9d;
 }
 a:hover.button {
 	background-color: lightCoral;
 }
 a:link.clearButton {
-	border: 3px solid white;
+	border: 0.125em solid white;
 	background-color: transparent;
-	padding: 10px 20px;
+	padding: 0.4166666666666667em 0.8333333333333334em;
 }
 a:hover.clearButton {
 	background-color: hsla(240, 50%, 80%, 0.5);
@@ -85,66 +85,66 @@ a:hover.clearButton {
 button {
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 0.625em 1.3333333333333333em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
-	margin: 4px 2px;
+	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e69a8dff;
+	background-color: #e68d9d;
 }
 button:hover {
 	background-color: lightCoral;
 }
 input {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 0.6666666666666666em;
 }
 .submitbtn {
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 0.625em 1.3333333333333333em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
-	margin: 4px 2px;
+	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e69a8dff;
-	font-size: 18px;
-	padding: 10px 25px;
+	background-color: #e68d9d;
+	font-size: 0.75em;
+	padding: 0.4166666666666667em 1.0416666666666667em;
 }
 .submitbtn:hover {
 	background-color: lightCoral;
 }
 button.getproblems {
-	font-size: 28px;
+	font-size: 1.1666666666666667em;
 }
 .header {
 	margin: 0 auto;
 	max-width: 95%;
-	background-color: #e69a8dff;
+	background-color: #e68d9d;
 }
 .wrapper {
 	margin: 0 auto;
 	max-width: 80%;
 }
 .selectordiv {
-	padding: 30px;
+	padding: 1.25em;
 	background-color: purple;
 	border-style: solid;
 	border-color: white;
 	text-align: left;
 }
 .goals {
-	background-image: url("images/spacex.jpg");
-	min-height: 400px;
-	background-size: cover;
+	background-color: #ba3faa;
+	background-image: linear-gradient(30deg, rgb(186, 63, 170) 10%, rgb(186, 63, 124) 40%, rgb(247, 145, 66));
+	min-height: 16.666666666666668em;
 	text-shadow: 1px 1px 5px black;
 }
-.smaller {
-	max-width: 800px;
+.features {
+	max-width: 49.458333333333336em;
 	margin: 0 auto;
 }
 .dont-break {
@@ -158,12 +158,28 @@ input.largercheckbox {
 	transform : scale(1.5);
 }
 iframe {
-	max-width: 1344px;
+	max-width: 56em;
 }
 main {
 	display: grid;
 	max-width: 900px;
 	justify-content: center;
-	grid-template-columns: repeat(auto-fit, 450px);
+	grid-template-columns: repeat(auto-fit, 18.75em);
 	grid-gap: 0px;
 }
+.buttons {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+@media screen and (max-width: 850px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 593px) {
+	.buttons {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
