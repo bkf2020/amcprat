@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+a:visited {
+	color: #0000EE;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: white;

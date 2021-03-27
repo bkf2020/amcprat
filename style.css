@@ -49,6 +49,9 @@ a:active {
   	background-color: transparent;
   	text-decoration: underline;
 }
+a:visited {
+	color: #e68d9d;
+}
 a:link.sol {
 	color: #f98a40;
 }
@@ -82,6 +85,10 @@ a:link.clearButton {
 }
 a:hover.clearButton {
 	background-color: hsla(240, 50%, 80%, 0.5);
+}
+a:visited.clearButton {
+	background-color: transparent;
+	color: white;
 }
 button {
 	border: none;
