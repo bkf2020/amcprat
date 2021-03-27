@@ -3,24 +3,26 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: white;
+	font-size: 18px;
 }
 div.cmty-view-post-item-text {
-	font-size: 18px;
+	font-size: 1em;
 	margin: 0 auto;
 	max-width: 1344px;
 }
 p {
-	font-size: 18px;
+	font-size: 1em;
 	margin: 0 auto;
 	max-width: 1344px;
 }
 h2 {
+	font-size: 1.55555555556em;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1344px;
 }
 li {
-	font-size: 18px;
+	font-size: 1em;
 }
 iframe {
 	max-width: 100%;
@@ -36,4 +38,9 @@ img.asy-image {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em 0;
+}
+@media screen and (max-width: 850px) {
+	body {
+		font-size: 14px;
+	}
 }
