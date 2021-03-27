@@ -176,6 +176,9 @@ main {
 	body {
 		font-size: 16px;
 	}
+	.wrapper {
+		max-width: 100%;
+	}
 }
 @media screen and (max-width: 593px) {
 	.buttons {
@@ -183,4 +186,3 @@ main {
 		flex-direction: column;
 	}
 }
-
