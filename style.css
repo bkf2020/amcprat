@@ -62,7 +62,7 @@ a:link.button {
 	border: none;
 	color: white;
 	padding: 0.625em 1.3333333333333333em;
-	font-size: 1.25em;
+	font-size: 1em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -78,6 +78,7 @@ a:link.clearButton {
 	border: 0.125em solid white;
 	background-color: transparent;
 	padding: 0.4166666666666667em 0.8333333333333334em;
+	font-size: 1.1em;
 }
 a:hover.clearButton {
 	background-color: hsla(240, 50%, 80%, 0.5);
