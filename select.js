@@ -26,7 +26,7 @@ function getLevels() {
 			}
 		}
 	}
-	window.location.replace("answerproblems.html" + afterWebsite);
+	window.location.href = "answerproblems.html" + afterWebsite;
 }
 
 // from https://stackoverflow.com/questions/51319147/map-default-value
