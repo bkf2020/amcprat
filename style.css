@@ -75,6 +75,9 @@ a:link.button {
 	cursor: pointer;
 	background-color: #e68d9d;
 }
+a:visited.button {
+	color: white;
+}
 a:hover.button {
 	background-color: lightCoral;
 }
