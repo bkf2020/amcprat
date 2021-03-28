@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 body {
+	-webkit-text-size-adjust: 100%;
 	color: white;
 	font-weight: 400;
 	font-size: 24px;
