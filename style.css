@@ -174,7 +174,7 @@ iframe {
 }
 main {
 	display: grid;
-	max-width: 900px;
+	max-width: 37.5em;
 	justify-content: center;
 	grid-template-columns: repeat(auto-fit, 18.75em);
 	grid-gap: 0px;
@@ -182,6 +182,14 @@ main {
 .buttons {
 	display: inline-flex;
 	flex-wrap: wrap;
+}
+@media screen and (max-width: 1160px) {
+	.selectordiv {
+		font-size: 16px;
+	}
+	main {
+		font-size: 16px;
+	}
 }
 @media screen and (max-width: 850px) {
 	body {
@@ -195,5 +203,14 @@ main {
 	.buttons {
 		display: flex;
 		flex-direction: column;
+	}
+}
+@media screen and (min-width: 2250px) {
+	body {
+		font-size: 28px;
+	}
+	main {
+		max-width: 75em;
+		font-size: 24px;
 	}
 }
