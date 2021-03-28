@@ -205,7 +205,7 @@ main {
 		flex-direction: column;
 	}
 }
-@media screen and (min-width: 2250px) {
+@media screen and (min-width: 2300px) {
 	body {
 		font-size: 28px;
 	}
