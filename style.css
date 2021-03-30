@@ -3,9 +3,9 @@ body {
 	-webkit-text-size-adjust: 100%;
 	color: white;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 22px;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #52077a;
+	background-color: #370651;
 	-webkit-font-smoothing: antialiased;
 }
 h1 {
@@ -32,11 +32,8 @@ h3.wrong {
 b {
 	font-weight: 700;
 }
-p {
-	font-weight: 400;
-}
 a:link {
-	color: #e68d9d;
+	color: coral;
  	background-color: transparent;
   	text-decoration: underline;
 }
@@ -51,7 +48,7 @@ a:active {
   	text-decoration: underline;
 }
 a:visited {
-	color: #e68d9d;
+	color: coral;
 }
 a:link.sol {
 	color: #f98a40;
@@ -73,13 +70,13 @@ a:link.button {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e68d9d;
+	background-color: #cd5b45;
 }
 a:visited.button {
 	color: white;
 }
 a:hover.button {
-	background-color: lightCoral;
+	background-color: #f27157;
 }
 a:link.clearButton {
 	border: 0.125em solid white;
@@ -104,10 +101,10 @@ button {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e68d9d;
+	background-color: #cd5b45;
 }
 button:hover {
-	background-color: lightCoral;
+	background-color: #f27157;
 }
 input {
 	font-family: 'Open Sans', sans-serif;
@@ -123,12 +120,12 @@ input {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #e68d9d;
+	background-color: #cd5b45;
 	font-size: 0.75em;
 	padding: 0.4166666666666667em 1.0416666666666667em;
 }
 .submitbtn:hover {
-	background-color: lightCoral;
+	background-color: #f27157;
 }
 button.getproblems {
 	font-size: 1.1666666666666667em;
@@ -136,7 +133,7 @@ button.getproblems {
 .header {
 	margin: 0 auto;
 	max-width: 95%;
-	background-color: #e68d9d;
+	background-color: #cd5b45;
 }
 .wrapper {
 	margin: 0 auto;
@@ -144,14 +141,13 @@ button.getproblems {
 }
 .selectordiv {
 	padding: 1.25em;
-	background-color: purple;
 	border-style: solid;
 	border-color: white;
 	text-align: left;
 }
 .goals {
 	background-color: #ba3faa;
-	background-image: linear-gradient(30deg, rgb(186, 63, 170) 10%, rgb(186, 63, 124) 40%, rgb(247, 145, 66));
+	background-image: linear-gradient(30deg, rgb(119, 43, 109) 10%, rgb(165, 59, 115) 40%, rgb(216, 125, 56));
 	min-height: 16.666666666666668em;
 	text-shadow: 1px 1px 5px black;
 }
@@ -174,9 +170,9 @@ iframe {
 }
 main {
 	display: grid;
-	max-width: 37.5em;
+	max-width: 36em;
 	justify-content: center;
-	grid-template-columns: repeat(auto-fit, 18.75em);
+	grid-template-columns: repeat(auto-fit, 18em);
 	grid-gap: 0px;
 }
 .buttons {
@@ -184,19 +180,24 @@ main {
 	flex-wrap: wrap;
 }
 @media screen and (max-width: 1160px) {
-	.selectordiv {
-		font-size: 16px;
-	}
-	main {
-		font-size: 16px;
+	body {
+		font-size: 20px;
 	}
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 915px) {
+	body {
+		font-size: 18px;
+	}
+	.wrapper {
+		max-width: 90%;
+	}
+}
+@media screen and (max-width: 735px) {
 	body {
 		font-size: 16px;
 	}
 	.wrapper {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 @media screen and (max-width: 593px) {
@@ -207,10 +208,9 @@ main {
 }
 @media screen and (min-width: 2300px) {
 	body {
-		font-size: 28px;
+		font-size: 26px;
 	}
 	main {
 		max-width: 75em;
-		font-size: 24px;
 	}
 }
