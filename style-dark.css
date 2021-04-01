@@ -206,8 +206,11 @@ main {
 		font-size: 26px;
 	}
 }
-@media screen and (min-width: 3050px) {
+@media screen and (min-width: 3343px) {
 	body {
 		font-size: 0.8vw;
 	}
+}
+iframe {
+	width: 13.636363636363636363636363636364em;
 }
