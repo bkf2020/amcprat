@@ -162,9 +162,6 @@ button.getproblems {
 input.largercheckbox {
 	transform : scale(1.5);
 }
-iframe {
-	max-width: 56em;
-}
 main {
 	display: grid;
 	max-width: 36em;
@@ -207,5 +204,10 @@ main {
 @media screen and (min-width: 2400px) {
 	body {
 		font-size: 26px;
+	}
+}
+@media screen and (min-width: 3050px) {
+	body {
+		font-size: 0.8vw;
 	}
 }

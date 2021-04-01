@@ -11,18 +11,18 @@ body {
 div.cmty-view-post-item-text {
 	font-size: 1em;
 	margin: 0 auto;
-	width: 74.66666666666666666667em;
+	width: 95%;
 }
 p {
 	font-size: 1em;
 	margin: 0 auto;
-	width: 74.66666666666666666667em;
+	width: 95%;
 }
 h2 {
 	font-size: 1.55555555556em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 47.99999999em;
+	width: 95%;
 }
 li {
 	font-size: 1em;
@@ -59,8 +59,22 @@ img.asy-image {
 	}
 }
 	
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 1894px) {
 	body {
-		font-size: 26px;
+		font-size: 20px;
+	}
+	div.cmty-view-post-item-text {
+		width: 90%;
+	}
+	p {
+		width: 90%;
+	}
+	h2 {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 2414px) {
+	body {
+		font-size: 0.8vw;
 	}
 }
