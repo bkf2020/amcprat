@@ -47,8 +47,8 @@ img.asy-image {
 		font-size: 14px;
 	}
 }
-@media screen and (min-width: 2300px) {
+@media screen and (min-width: 2400px) {
 	body {
-		font-size: 22px;
+		font-size: 1vw;
 	}
 }
