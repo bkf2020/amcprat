@@ -5,7 +5,7 @@ body {
 	font-weight: 400;
 	font-size: 22px;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #370651;
+	background-color: #52077a;
 	-webkit-font-smoothing: antialiased;
 }
 h1 {
@@ -33,7 +33,7 @@ b {
 	font-weight: 700;
 }
 a:link {
-	color: coral;
+	color: #e68d9d;
  	background-color: transparent;
   	text-decoration: underline;
 }
@@ -48,7 +48,7 @@ a:active {
   	text-decoration: underline;
 }
 a:visited {
-	color: coral;
+	color: #e68d9d;
 }
 a:link.sol {
 	color: #f98a40;
@@ -70,13 +70,13 @@ a:link.button {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #cd5b45;
+	background-color: #e68d9d;
 }
 a:visited.button {
 	color: white;
 }
 a:hover.button {
-	background-color: #f27157;
+	background-color: lightCoral;
 }
 a:link.clearButton {
 	border: 0.125em solid white;
@@ -101,10 +101,11 @@ button {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #cd5b45;
+	background-color: #e68d9d;
+	font-size: 1em;
 }
 button:hover {
-	background-color: #f27157;
+	background-color: lightCoral;
 }
 input {
 	font-family: 'Open Sans', sans-serif;
@@ -120,12 +121,12 @@ input {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
-	background-color: #cd5b45;
+	background-color: #e68d9d;
 	font-size: 0.75em;
 	padding: 0.4166666666666667em 1.0416666666666667em;
 }
 .submitbtn:hover {
-	background-color: #f27157;
+	background-color: lightCoral;
 }
 button.getproblems {
 	font-size: 1.1666666666666667em;
@@ -133,7 +134,7 @@ button.getproblems {
 .header {
 	margin: 0 auto;
 	max-width: 95%;
-	background-color: #cd5b45;
+	background-color: #e68d9d;
 }
 .wrapper {
 	margin: 0 auto;
@@ -147,17 +148,13 @@ button.getproblems {
 }
 .goals {
 	background-color: #ba3faa;
-	background-image: linear-gradient(30deg, rgb(119, 43, 109) 10%, rgb(165, 59, 115) 40%, rgb(216, 125, 56));
+	background-image: linear-gradient(30deg, rgb(186, 63, 170) 10%, rgb(186, 63, 124) 40%, rgb(247, 145, 66));
 	min-height: 16.666666666666668em;
 	text-shadow: 1px 1px 5px black;
 }
 .features {
 	max-width: 49.458333333333336em;
 	margin: 0 auto;
-}
-.dont-break {
-	overflow-wrap: break-word;
-	word-wrap: break-word;
 }
 .hidden {
 	display: none;
@@ -176,8 +173,10 @@ main {
 	grid-gap: 0px;
 }
 .buttons {
-	display: inline-flex;
+	display: flex;
+	gap: 5px;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 @media screen and (max-width: 1160px) {
 	body {
@@ -200,17 +199,13 @@ main {
 		max-width: 95%;
 	}
 }
-@media screen and (max-width: 593px) {
-	.buttons {
-		display: flex;
-		flex-direction: column;
-	}
-}
-@media screen and (min-width: 2300px) {
-	body {
-		font-size: 26px;
-	}
+@media screen and (min-width: 2028px) {
 	main {
 		max-width: 75em;
+	}
+}
+@media screen and (min-width: 2400px) {
+	body {
+		font-size: 1vw;
 	}
 }

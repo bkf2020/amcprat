@@ -7,12 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="logo.png"/>
 	<title>AMCPRAT: AMC Practice Tool</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" id="themeStylesheet">
+	<script type="text/javascript" src="theme.js"></script>
 </head>
 <body>
-	<center>
-		<div class="goals">
-			<br/>
+	<div class="goals">
+		<br/>
+		<center>
 			<div class="wrapper">
 				<h1>AMCPRAT: AMC Practice Tool</h1>
 				<h3>
@@ -37,10 +38,15 @@
 				class="button clearButton">
 					Source Code
 				</a>
+				
+				<a href="javascript:void(0);" onclick="changeTheme()"
+				class="button clearButton">
+					Change Theme
+				</a>
 			</div>
-			<br/>
-		</div>
-	</center>
+		</center>
+		<br/>
+	</div>
 	<center>
 		<h2>Why use AMCPRAT?</h1>
 	</center>
@@ -99,6 +105,22 @@
 			<a href="selectproblems.html" class="button">
 				Select your problems
 			</a>
+			<br/><br/><br/>
+			<nav>
+				<a href="index.html">Home</a> |
+				<a href="selectproblems.html">Get started</a> |
+				<a href="https://github.com/bkf2020/amcprat/wiki"
+				target="_blank" rel="noopener noreferrer">Documentation</a> |
+				<a target="_blank" rel="noopener noreferrer"
+				href="https://github.com/bkf2020/amcprat">
+					Source Code</a> |
+				<a href="qna.html">QnA</a> |
+				<a href="javascript:void(0);"
+				onclick="changeTheme()">
+					Change Theme
+				</a>
+			</nav>
+			<br/><br/>
 		</center>
 	</div>
 </body>
