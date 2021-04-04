@@ -213,4 +213,5 @@ main {
 }
 iframe {
 	height: 13.636363636363636363636363636364em;
+	min-height: 250px;
 }

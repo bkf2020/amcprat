@@ -203,7 +203,7 @@ main {
 }
 @media screen and (min-width: 2400px) {
 	body {
-		font-size: 26px;
+		font-size: 24px;
 	}
 }
 @media screen and (min-width: 3343px) {
@@ -213,4 +213,5 @@ main {
 }
 iframe {
 	height: 13.636363636363636363636363636364em;
+	min-height: 250px;
 }
