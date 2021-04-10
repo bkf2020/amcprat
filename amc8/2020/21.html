@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylebutwhite.css">
+</head>
+<body>
+	<h2><span>2020 AMC8 Problem 21</span> <a href="21.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2>
+<div class="cmty-view-post-item-text">A game board consists of <img alt="$64$" class="latex" height="13" src="https://latex.artofproblemsolving.com/0/5/e/05e228ac5bee7b9ffb60cacf50f3f2c7c31f8038.png" style="vertical-align: 0px" width="18"/> squares that alternate in color between black and white. The figure below shows square <img alt="$P$" class="latex" height="12" src="https://latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14"/> in the bottom row and square <img alt="$Q$" class="latex" height="16" src="https://latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png" style="vertical-align: -3px" width="13"/> in the top row. A marker is placed at <img alt="$P.$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/3/c/e3ce33ec2a34dc4fddaec3224043f4a72bbe6d0e.png" width="15"/> A <i>step</i> consists of moving the marker onto one of the adjoining white squares in the row above. How many <span style="white-space:pre;"><img alt="$7$" class="latex" height="12" src="https://latex.artofproblemsolving.com/e/0/a/e0a0db32027a732ac57d37ef2ae9bb150f65b108.png" width="9"/>-</span>step paths are there from <img alt="$P$" class="latex" height="12" src="https://latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" width="14"/> to <img alt="$Q?$" class="latex" height="16" src="https://latex.artofproblemsolving.com/5/3/5/5351d296b5674cb8207a306f4412527dab730631.png" style="vertical-align: -3px" width="22"/> (The figure shows a sample path.)<br/>
+<br/>
+<img alt='[asy]
+https:// diagram by SirCalcsALot
+size(200);
+int[] x = {6, 5, 4, 5, 6, 5, 6};
+int[] y = {1, 2, 3, 4, 5, 6, 7};
+int N = 7;
+for (int i = 0; i &lt; 8; ++i) {
+for (int j = 0; j &lt; 8; ++j) {
+draw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j));
+if ((i+j) % 2 == 0) {
+filldraw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--(i,j)--cycle,black);
+}
+}
+}
+for (int i = 0; i &lt; N; ++i) {
+draw(circle((x[i],y[i])+(0.5,0.5),0.35));
+}
+label("$P$", (5.5, 0.5));
+label("$Q$", (6.5, 7.5));
+[/asy]' class="asy-image" height="335" src="https://latex.artofproblemsolving.com/b/2/e/b2e4c56495c532d3e4f73068c6ad661392ba54ed.png" width="335"/><br/>
+<br/>
+<img alt="$\textbf{(A) }28 \qquad \textbf{(B) }30 \qquad \textbf{(C) }32 \qquad \textbf{(D) }33 \qquad \textbf{(E) }35$" class="latex" height="17" src="https://latex.artofproblemsolving.com/4/a/f/4afd089177252e283e0176cd12e59980f95df741.png" style="vertical-align: -4px" width="398"/></div></body>
+</html>

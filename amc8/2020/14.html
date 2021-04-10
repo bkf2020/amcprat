@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylebutwhite.css">
+</head>
+<body>
+	<h2><span>2020 AMC8 Problem 14</span> <a href="14.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2>
+<div class="cmty-view-post-item-text">There are <img alt="$20$" class="latex" height="12" src="https://latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png" width="17"/> cities in the County of Newton. Their populations are shown in the bar chart below. The average population of all the cities is indicated by the horizontal dashed line. Which of the following is closest to the total population of all <img alt="$20$" class="latex" height="12" src="https://latex.artofproblemsolving.com/f/8/3/f8366cd6196dd8a9da6d38a3e9eafb109e99d53e.png" width="17"/> cities?<br/>
+<img alt='[asy]
+https:// made by SirCalcsALot
+
+size(300);
+
+pen shortdashed=linetype(new real[] {6,6});
+
+https:// axis
+draw((0,0)--(0,9300), linewidth(1.25));
+draw((0,0)--(11550,0), linewidth(1.25));
+
+for (int i = 2000; i &lt; 9000; i = i + 2000) {
+draw((0,i)--(11550,i), linewidth(0.5)+1.5*grey);
+label(string(i), (0,i), W);
+}
+
+
+for (int i = 500; i &lt; 9300; i=i+500) {
+draw((0,i)--(150,i),linewidth(1.25));
+if (i % 2000 == 0) {
+draw((0,i)--(250,i),linewidth(1.25));
+}
+}
+
+int[] data = {8750, 3800, 5000, 2900, 6400, 7500, 4100, 1400, 2600, 1470, 2600, 7100, 4070, 7500, 7000, 8100, 1900, 1600, 5850, 5750};
+int data_length = 20;
+
+int r = 550;
+for (int i = 0; i &lt; data_length; ++i) {
+fill(((i+1)*r,0)--((i+1)*r, data[i])--((i+1)*r,0)--((i+1)*r, data[i])--((i+1)*r,0)--((i+1)*r, data[i])--((i+2)*r-100, data[i])--((i+2)*r-100,0)--cycle, 1.5*grey);
+draw(((i+1)*r,0)--((i+1)*r, data[i])--((i+1)*r,0)--((i+1)*r, data[i])--((i+1)*r,0)--((i+1)*r, data[i])--((i+2)*r-100, data[i])--((i+2)*r-100,0));
+}
+
+draw((0,4750)--(11450,4750),shortdashed);
+
+label("Cities", (11450*0.5,0), S);
+label(rotate(90)*"Population", (0,9000*0.5), 10*W);
+[/asy]' class="asy-image" height="362" src="https://latex.artofproblemsolving.com/0/c/b/0cbe70f3983021d466417bf77c034a81f92c9894.png" width="502"/><br/>
+<img alt="$\textbf{(A) }65{,}000 \qquad \textbf{(B) }75{,}000 \qquad \textbf{(C) }85{,}000 \qquad \textbf{(D) }95{,}000 \qquad \textbf{(E) }105{,}000$" class="latex" height="17" src="https://latex.artofproblemsolving.com/1/c/2/1c2783d3edfdcd47b5e4487a386636a80d1bbe4a.png" style="vertical-align: -4px" width="568"/></div></body>
+</html>

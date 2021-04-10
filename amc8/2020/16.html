@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylebutwhite.css">
+</head>
+<body>
+	<h2><span>2020 AMC8 Problem 16</span> <a href="16.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2>
+<div class="cmty-view-post-item-text">Each of the points <img alt="$A,B,C,D,E,$" class="latex" height="16" src="https://latex.artofproblemsolving.com/8/4/7/84785c4da5d7220a503a2ecfafe0a08090047ff3.png" style="vertical-align: -3px" width="108"/> and <img alt="$F$" class="latex" height="12" src="https://latex.artofproblemsolving.com/a/0/5/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" width="14"/> in the figure below represents a different digit from <img alt="$1$" class="latex" height="12" src="https://latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" style="vertical-align: 0px" width="8"/> to <img alt="$6.$" class="latex" height="12" src="https://latex.artofproblemsolving.com/1/d/e/1de3ed5fb7fa9b1fa73395d65c43e5bc81cd9d61.png" width="12"/> Each of the five lines shown passes through some of these points. The digits along each line are added to produce five sums, one for each line. The total of the five sums is <img alt="$47.$" class="latex" height="12" src="https://latex.artofproblemsolving.com/c/8/d/c8d06fc910703a003655e44dbcd4f3626ee6d02f.png" style="vertical-align: 0px" width="21"/> What is the digit represented by <img alt="$B?$" class="latex" height="12" src="https://latex.artofproblemsolving.com/d/3/7/d3713b61d71855f44ce52196d5bf838501d09ad5.png" width="22"/><br/>
+<img alt='[asy]
+https:// made by SirCalcsALot
+
+size(200);
+dotfactor = 10;
+
+pair p1 = (-28,0);
+pair p2 = (-111,213);
+draw(p1--p2,linewidth(1));
+
+pair p3 = (-160,0);
+pair p4 = (-244,213);
+draw(p3--p4,linewidth(1));
+
+pair p5 = (-316,0);
+pair p6 = (-67,213);
+draw(p5--p6,linewidth(1));
+
+pair p7 = (0, 68);
+pair p8 = (-350,10);
+draw(p7--p8,linewidth(1));
+
+pair p9 = (0, 150);
+pair p10 = (-350, 62);
+draw(p9--p10,linewidth(1));
+
+pair A = intersectionpoint(p1--p2, p5--p6);
+dot("$A$", A, 2*W);
+
+pair B = intersectionpoint(p5--p6, p3--p4);
+dot("$B$", B, 2*WNW);
+
+pair C = intersectionpoint(p7--p8, p5--p6);
+dot("$C$", C, 1.5*NW);
+
+pair D = intersectionpoint(p3--p4, p7--p8);
+dot("$D$", D, 2*NNE);
+
+pair EE = intersectionpoint(p1--p2, p7--p8);
+dot("$E$", EE, 2*NNE);
+
+pair F = intersectionpoint(p1--p2, p9--p10);
+dot("$F$", F, 2*NNE);
+[/asy]' class="asy-image" height="205" src="https://latex.artofproblemsolving.com/9/f/1/9f1f0f8c2be3a35542af7640459f9a938b659c27.png" width="335"/><br/>
+<img alt="$\textbf{(A) }1 \qquad \textbf{(B) }2 \qquad \textbf{(C) }3 \qquad \textbf{(D) }4 \qquad \textbf{(E) }5$" class="latex" height="17" src="https://latex.artofproblemsolving.com/b/2/6/b26b558fdb444715fcf411132081235bd3a230a0.png" style="vertical-align: -4px" width="353"/></div></body>
+</html>

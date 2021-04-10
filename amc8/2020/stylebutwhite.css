@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+a:visited {
+	color: #0000EE;
+}
+body {
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	font-size: 18px;
+}
+div.cmty-view-post-item-text {
+	font-size: 1em;
+	margin: 0 auto;
+	width: 95%;
+}
+p {
+	font-size: 1em;
+	margin: 0 auto;
+	width: 95%;
+}
+h2 {
+	font-size: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+li {
+	font-size: 1em;
+}
+iframe {
+	max-width: 100%;
+}
+img.latexcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0;
+}
+img.asy-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0;
+}
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 1344px) {
+	div.cmty-view-post-item-text {
+		width: 100%;
+	}
+	p {
+		width: 100%;
+	}
+	h2 {
+		width: 100%;
+	}
+}
+	
+@media screen and (min-width: 1897px) {
+	body {
+		font-size: 1.270vw;
+	}
+	div.cmty-view-post-item-text {
+		width: 90%;
+	}
+	p {
+		width: 90%;
+	}
+	h2 {
+		width: 90%;
+	}
+}
+/*@media screen and (min-width: 2651px) {
+	body {
+		font-size: 0.905vw;
+	}
+}*/
