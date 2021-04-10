@@ -122,8 +122,8 @@ input {
 	margin: 0.16666666666666666em 0.08333333333333333em;
 	cursor: pointer;
 	background-color: #cd5b45;
-	font-size: 0.75em;
-	padding: 0.4166666666666667em 1.0416666666666667em;
+	font-size: 0.85em;
+	padding: 0.3em 0.9em;
 }
 .submitbtn:hover {
 	background-color: #f27157;
@@ -189,9 +189,6 @@ main {
 	}
 }
 @media screen and (max-width: 735px) {
-	body {
-		font-size: 16px;
-	}
 	.wrapper {
 		max-width: 95%;
 	}
@@ -203,12 +200,12 @@ main {
 }
 @media screen and (min-width: 2400px) {
 	body {
-		font-size: 26px;
+		font-size: 24px;
 	}
 }
 @media screen and (min-width: 3343px) {
 	body {
-		font-size: 0.8vw;
+		font-size: 0.905vw;
 	}
 }
 iframe {

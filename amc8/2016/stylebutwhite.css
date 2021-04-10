@@ -19,7 +19,7 @@ p {
 	width: 95%;
 }
 h2 {
-	font-size: 1.55555555556em;
+	font-size: 1.4em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 95%;
@@ -42,9 +42,9 @@ img.asy-image {
 	margin-right: auto;
 	padding: 1em 0;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 1344px) {
@@ -59,9 +59,9 @@ img.asy-image {
 	}
 }
 	
-@media screen and (min-width: 1894px) {
+@media screen and (min-width: 1897px) {
 	body {
-		font-size: 20px;
+		font-size: 1.270vw;
 	}
 	div.cmty-view-post-item-text {
 		width: 90%;
@@ -73,8 +73,8 @@ img.asy-image {
 		width: 90%;
 	}
 }
-@media screen and (min-width: 2486px) {
+/*@media screen and (min-width: 2651px) {
 	body {
-		font-size: 0.8vw;
+		font-size: 0.905vw;
 	}
-}
+}*/
