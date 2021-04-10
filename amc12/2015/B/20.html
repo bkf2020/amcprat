@@ -1,4 +1,14 @@
-<!DOCTYPE html><html><head>	<link rel="stylesheet" href="stylebutwhite.css"></head><body>	<h2><span>2015 AMC12B Problem 20</span> <a href="20.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2><div class="cmty-view-post-item-text">For every positive integer <span style="white-space:nowrap;"><img alt="$n$" class="latex" height="8" src="https://latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" width="10"/>,</span> let <img alt="$\operatorname{mod_5}(n)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/0/1/c/01cf2f01de3b8783a23d8bc4ffbcd13365bf1cc8.png" style="vertical-align: -4px" width="66"/> be the remainder obtained when <img alt="$n$" class="latex" height="8" src="https://latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" width="10"/> is divided by <span style="white-space:nowrap;"><img alt="$5$" class="latex" height="12" src="https://latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" width="8"/>.</span> Define a function <img alt="$f : \{0, 1, 2, 3, \dots\} \times \{0, 1, 2, 3, 4\} \to \{0, 1, 2, 3, 4\}$" class="latex" height="18" src="https://latex.artofproblemsolving.com/3/e/d/3ede1024841a0d8c2a1f02ce42e76901d2459763.png" style="vertical-align: -4px" width="378"/> recursively as follows:<br/>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylebutwhite.css">
+</head>
+<body>
+	<h2><span>2015 AMC12B Problem 20</span> <a href="20.html" target="_blank" rel="noopener noreferrer">View full problem</a></h2>
+<div class="cmty-view-post-item-text">For every positive integer <span style="white-space:nowrap;"><img alt="$n$" class="latex" height="8" src="https://latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" width="10"/>,</span> let <img alt="$\operatorname{mod_5}(n)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/0/1/c/01cf2f01de3b8783a23d8bc4ffbcd13365bf1cc8.png" style="vertical-align: -4px" width="66"/> be the remainder obtained when <img alt="$n$" class="latex" height="8" src="https://latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" width="10"/> is divided by <span style="white-space:nowrap;"><img alt="$5$" class="latex" height="12" src="https://latex.artofproblemsolving.com/7/9/0/79069377f91364c2f87a64e5f9f562a091c8a6c1.png" width="8"/>.</span> Define a function <img alt="$f : \{0, 1, 2, 3, \dots\} \times \{0, 1, 2, 3, 4\} \to \{0, 1, 2, 3, 4\}$" class="latex" height="18" src="https://latex.artofproblemsolving.com/3/e/d/3ede1024841a0d8c2a1f02ce42e76901d2459763.png" style="vertical-align: -4px" width="378"/> recursively as follows:<br/>
 <img alt="\[f(i, j) = \begin{cases}
 \operatorname{mod_5}(j+1) &amp; \text{if }i=0\text{ and }0\leq j\leq 4 \\
 f(i-1, 1) &amp; \text{if }i\geq 1\text{ and }j=0 \text{, and}\\
@@ -6,4 +16,5 @@ f(i-1, f(i, j-1)) &amp; \text{if }i\geq 1\text{ and }1\leq j\leq 4
 \end{cases}\]" class="latexcenter" height="74" src="https://latex.artofproblemsolving.com/9/e/7/9e7a619aceacce54486212984568f2de2e6efc08.png" width="425"/><br/>
 What is <span style="white-space:nowrap;"><img alt="$f(2015, 2)$" class="latex" height="18" src="https://latex.artofproblemsolving.com/d/e/a/dea706e47cff20b95dfbe3b0fb2a0b28e1986035.png" style="vertical-align: -4px" width="77"/>?</span><br/>
 <br/>
-<img alt="$\textbf{(A) }0 \qquad\textbf{(B) }1 \qquad\textbf{(C) }2 \qquad\textbf{(D) }3 \qquad\textbf{(E) }4$" class="latex" height="17" src="https://latex.artofproblemsolving.com/d/e/3/de316aaf4c3b856741e553c8d2763aed50cff4f8.png" style="vertical-align: -4px" width="353"/></div></body></html>
+<img alt="$\textbf{(A) }0 \qquad\textbf{(B) }1 \qquad\textbf{(C) }2 \qquad\textbf{(D) }3 \qquad\textbf{(E) }4$" class="latex" height="17" src="https://latex.artofproblemsolving.com/d/e/3/de316aaf4c3b856741e553c8d2763aed50cff4f8.png" style="vertical-align: -4px" width="353"/></div></body>
+</html>
