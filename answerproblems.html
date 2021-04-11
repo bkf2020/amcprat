@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="checker.js"></script>
 	<script type="text/javascript" src="theme.js"></script>
 </head>
-<body>
+<body onbeforeunload="return message()">
 	<div class="header">
 		<h1>AMCPRAT: your practice problems</h1>
 	</div>
@@ -192,6 +192,9 @@
 			</p>
 			
 			<script>
+				function message() {
+					return "Are you sure you want to leave?";
+				}
 				getLevelsFromURL();
 				getProblems();
 				for(var i = 0; i < 5; i++) {
