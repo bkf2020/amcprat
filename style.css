@@ -212,3 +212,18 @@ iframe {
 	height: 13.636363636363636363636363636364em;
 	min-height: 250px;
 }
+.annoucement {
+	border-color: darkorange;
+	border-style: dashed;
+	border-radius: 1em;
+	margin-top: 2em;
+	padding-left: 1em;
+	background-color: #e6e5ad;
+	color: black;
+}
+.annoucementlink:link {
+	color: blue;
+}
+.annoucementlink:hover {
+	color: blue;
+}

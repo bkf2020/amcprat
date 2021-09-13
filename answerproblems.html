@@ -13,6 +13,18 @@
 	<script type="text/javascript" src="theme.js"></script>
 </head>
 <body onbeforeunload="return message()">
+	<div class="wrapper">
+	<div class="annoucement">
+		<h2>IMPORTANT ANNOUCEMENT</h2>
+		<p>
+			Due to copyright issues AMCPRAT and AMCPRAT-Simple
+			are shutting down. They will be closed in 3 weeks after
+			this message: <a class="annoucementlink" href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=amcprat+and+amcprat-simple+shutting+down&year=2021&month=Oct&day=03&hour=05&min=00&sec=00&p1=1440" target="_blank" rel="noopener noreferrer">Sunday, October 3, 2021 5:00 am UTC.</a>
+
+			More information can be found <a class="annoucementlink" href="https://bkf2020.github.io/amcprat-shutdown">here.</a>
+		</p>
+	</div>
+	</div>
 	<div class="header">
 		<h1>AMCPRAT: your practice problems</h1>
 	</div>
@@ -35,7 +47,7 @@
 			</nav>
 			<iframe name="hiddenFrame" width="0" height="0" border="0"
 			style="display: none;"></iframe>
-			
+
 			<h3 id="problemStatus0" class="blank">
 				Unattempted
 			</h3>
@@ -65,7 +77,7 @@
 				<button type="button" id="submitbtn0" class="submitbtn"
 				name="amcsb" onclick="checkAnswer(0)">Submit</button>
 			</div>
-			
+
 			<h3 id="problemStatus1" class="blank">
 				Unattempted
 			</h3>
@@ -95,7 +107,7 @@
 				<button type="button" id="submitbtn1" class="submitbtn"
 				name="amcsb" onclick="checkAnswer(1)">Submit</button>
 			</div>
-			
+
 			<h3 id="problemStatus2" class="blank">
 				Unattempted
 			</h3>
@@ -125,7 +137,7 @@
 				<button type="button" id="submitbtn2" class="submitbtn"
 				name="amcsb" onclick="checkAnswer(2)">Submit</button>
 			</div>
-			
+
 			<h3 id="problemStatus3" class="blank">
 				Unattempted
 			</h3>
@@ -155,7 +167,7 @@
 				<button type="button" id="submitbtn3" class="submitbtn"
 				name="amcsb" onclick="checkAnswer(3)">Submit</button>
 			</div>
-			
+
 			<h3 id="problemStatus4" class="blank">
 				Unattempted
 			</h3>
@@ -185,12 +197,12 @@
 				<button type="button" id="submitbtn4" class="submitbtn"
 				name="amcsb" onclick="checkAnswer(4)">Submit</button>
 			</div>
-			
+
 			<p>
 				These AMC and/or AIME problems are copyright
 				© Mathematical Association of America.
 			</p>
-			
+
 			<script>
 				function message() {
 					return "Are you sure you want to leave?";
@@ -201,7 +213,7 @@
 					var problemDisplay =
 					document.getElementById("iframe" + i.toString());
 					problemDisplay.src = problemURLS[i];
-					
+
 					currURLParts = problemURLS[i].split("/");
 					if(currURLParts[0] === "aime") {
 						var asf = "aimeSubmitForm" + i.toString();
