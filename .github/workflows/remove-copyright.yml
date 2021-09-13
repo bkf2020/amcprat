@@ -8,7 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          cd amcprat
           rm -rf amc10
           rm -rf amc12
           rm -rf amc8
